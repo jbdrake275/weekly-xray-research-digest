@@ -12,10 +12,10 @@ class DuplicateChecker:
         for entry in self.history_manager.load():
             if not entry:
                 continue
-            same_doi = bool(entry.get("doi")) and entry.get("doi") == paper.doi
+            # DOIs are case-insensitive, and providers differ in the case they return.
+            same_doi = bool(entry.get("doi")) and entry.get("doi").strip().lower() == paper.doi.strip().lower()
             same_title = bool(entry.get("title")) and entry.get("title").strip().lower() == paper.title.strip().lower()
-            same_year = entry.get("publication_date") and paper.publication_date and entry.get("publication_date")[:4] == str(paper.publication_date.year)
-            if same_doi or same_title or same_year:
+            if same_doi or same_title:
                 return True
         return False
 
