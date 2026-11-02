@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import html
+import re
 from datetime import date
 from typing import Iterable
 
@@ -8,6 +10,14 @@ import requests
 from src.config import get_settings
 from src.models import PaperRecord
 from src.providers.base_provider import LiteratureProvider
+
+
+def clean_jats(abstract: str) -> str:
+    # Crossref passes publisher abstracts through as JATS XML (<jats:p>, <title>, ...).
+    # Drop the "Abstract" heading, strip remaining tags, decode entities, and collapse whitespace.
+    text = re.sub(r"<(jats:)?title>\s*Abstract\s*</(jats:)?title>", " ", abstract, flags=re.IGNORECASE)
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text))
+    return " ".join(text.split())
 
 
 class CrossrefProvider(LiteratureProvider):
@@ -52,8 +62,7 @@ class CrossrefProvider(LiteratureProvider):
                 continue
             title = item.get("title", ["Untitled"])[0] if item.get("title") else "Untitled"
             authors = [author.get("family", "") for author in item.get("author", []) if author.get("family")]
-            abstract = item.get("abstract") or ""
-            abstract = abstract.replace("\n", " ") if abstract else ""
+            abstract = clean_jats(item.get("abstract") or "")
             published = item.get("published-print") or item.get("published-online") or {}
             date_value = None
             if published:

@@ -62,6 +62,13 @@ def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
     assert paper.abstract == "Tomography of foams and of gels."
 
 
+def test_clean_jats_strips_markup():
+    raw = "<jats:title>Abstract</jats:title>\n  <jats:p>Phase  contrast &amp; <jats:italic>in situ</jats:italic> CT.</jats:p>"
+    assert crossref_provider.clean_jats(raw) == "Phase contrast & in situ CT."
+    assert crossref_provider.clean_jats("<title>Abstract</title> <p>Plain.</p>") == "Plain."
+    assert crossref_provider.clean_jats("") == ""
+
+
 def test_date_window_becomes_api_filters(fake_get):
     window = {"since": date(2026, 10, 19), "until": date(2026, 11, 2)}
 
