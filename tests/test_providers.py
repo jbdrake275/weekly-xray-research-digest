@@ -1,0 +1,93 @@
+from __future__ import annotations
+
+from datetime import date
+
+import pytest
+
+from src.providers import crossref_provider, openalex_provider
+
+
+class FakeResponse:
+    def __init__(self, payload):
+        self._payload = payload
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return self._payload
+
+
+@pytest.fixture
+def fake_get(monkeypatch):
+    calls = {}
+
+    def install(module, payload):
+        def _get(url, params=None, headers=None, timeout=None):
+            calls.update(url=url, params=params)
+            return FakeResponse(payload)
+
+        monkeypatch.setattr(module.requests, "get", _get)
+        return calls
+
+    return install
+
+
+def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
+    payload = {
+        "results": [
+            {
+                "doi": "https://doi.org/10.1/xyz",
+                "title": "X-ray tomography of foams",
+                "publication_date": "2025-03-04",
+                "primary_location": {"source": {"display_name": "J. Synchrotron Rad."}, "landing_page_url": "https://example.org/p"},
+                "authorships": [{"author": {"display_name": "Ada Lovelace"}}],
+                "concepts": [{"display_name": "Tomography"}],
+                "cited_by_count": 7,
+            },
+            {"title": "No DOI, skipped"},
+        ]
+    }
+    calls = fake_get(openalex_provider, payload)
+    papers = openalex_provider.OpenAlexProvider(email="me@example.org").search(["X-ray CT"], limit=5)
+    assert calls["params"]["mailto"] == "me@example.org"
+    assert len(papers) == 1
+    paper = papers[0]
+    assert paper.doi == "10.1/xyz"
+    assert paper.publication_date == date(2025, 3, 4)
+    assert paper.journal == "J. Synchrotron Rad."
+    assert paper.authors == ["Ada Lovelace"]
+    assert paper.citation_count == 7
+
+
+def crossref_payload(date_parts):
+    return {
+        "message": {
+            "items": [
+                {
+                    "DOI": "10.2/abc",
+                    "title": ["Detector calibration"],
+                    "author": [{"family": "Curie"}],
+                    "published-print": {"date-parts": [date_parts]},
+                    "container-title": ["NDT&E Int."],
+                    "is-referenced-by-count": 3,
+                }
+            ]
+        }
+    }
+
+
+def test_crossref_parses_full_date(fake_get):
+    fake_get(crossref_provider, crossref_payload([2024, 6, 15]))
+    papers = crossref_provider.CrossrefProvider().search(["detector"], limit=5)
+    assert len(papers) == 1
+    assert papers[0].publication_date == date(2024, 6, 15)
+    assert papers[0].authors == ["Curie"]
+    assert papers[0].journal == "NDT&E Int."
+
+
+@pytest.mark.xfail(strict=True, raises=IndexError, reason="Known bug: year-month dates (no day) index past the end of date-parts.")
+def test_crossref_parses_partial_date(fake_get):
+    fake_get(crossref_provider, crossref_payload([2024, 6]))
+    papers = crossref_provider.CrossrefProvider().search(["detector"], limit=5)
+    assert papers[0].publication_date == date(2024, 6, 1)
