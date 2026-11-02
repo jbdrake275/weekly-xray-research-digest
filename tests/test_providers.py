@@ -39,6 +39,7 @@ def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
             {
                 "doi": "https://doi.org/10.1/xyz",
                 "title": "X-ray tomography of foams",
+                "abstract_inverted_index": {"of": [1, 4], "Tomography": [0], "foams": [2], "and": [3], "gels.": [5]},
                 "publication_date": "2025-03-04",
                 "primary_location": {"source": {"display_name": "J. Synchrotron Rad."}, "landing_page_url": "https://example.org/p"},
                 "authorships": [{"author": {"display_name": "Ada Lovelace"}}],
@@ -58,6 +59,12 @@ def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
     assert paper.journal == "J. Synchrotron Rad."
     assert paper.authors == ["Ada Lovelace"]
     assert paper.citation_count == 7
+    assert paper.abstract == "Tomography of foams and of gels."
+
+
+def test_reconstruct_abstract_handles_missing_index():
+    assert openalex_provider.reconstruct_abstract(None) == ""
+    assert openalex_provider.reconstruct_abstract({}) == ""
 
 
 def crossref_payload(date_parts):

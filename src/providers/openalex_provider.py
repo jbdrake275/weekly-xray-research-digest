@@ -11,6 +11,15 @@ from src.models import PaperRecord
 from src.providers.base_provider import LiteratureProvider
 
 
+def reconstruct_abstract(inverted_index: dict[str, list[int]] | None) -> str:
+    # OpenAlex ships abstracts only as an inverted index (word -> positions it
+    # occupies), not as plain text; invert it back and read words in position order.
+    if not inverted_index:
+        return ""
+    positions = [(position, word) for word, indexes in inverted_index.items() for position in indexes]
+    return " ".join(word for _, word in sorted(positions))
+
+
 class OpenAlexProvider(LiteratureProvider):
     name = "openalex"
 
@@ -42,7 +51,7 @@ class OpenAlexProvider(LiteratureProvider):
                 continue
             doi = doi.replace("https://doi.org/", "") if doi.startswith("https://") else doi
             title = item.get("title") or "Untitled"
-            abstract = item.get("abstract") or ""
+            abstract = reconstruct_abstract(item.get("abstract_inverted_index"))
             abstract = abstract.replace("\n", " ") if abstract else ""
             publication_date_value = item.get("publication_date")
             publication_date = None
