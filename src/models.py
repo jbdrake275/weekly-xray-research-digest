@@ -10,6 +10,7 @@ class PaperRecord:
     title: str
     authors: list[str]
     abstract: str = ""
+    summary: str = ""
     journal: str = ""
     publication_date: date | None = None
     doi: str = ""
@@ -39,6 +40,7 @@ class PaperRecord:
             "title": self.title,
             "authors": self.authors,
             "abstract": self.abstract,
+            "summary": self.summary,
             "journal": self.journal,
             "publication_date": self.publication_date.isoformat() if self.publication_date else None,
             "doi": self.doi,

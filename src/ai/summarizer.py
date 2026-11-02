@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 
 import requests
 
 from src.config import get_settings
 from src.models import PaperRecord
+
+logger = logging.getLogger("weekly_xray")
 
 
 class Summarizer:
@@ -22,11 +25,16 @@ class Summarizer:
             return "openai"
         if settings.azure_openai_endpoint and settings.azure_openai_key:
             return "azure_openai"
-        return "fallback"
+        return "none"
 
     def summarize(self, paper: PaperRecord) -> str:
-        if self.backend == "fallback":
-            return self._fallback_summary(paper)
+        """Return an LLM summary, or "" when no backend is configured or the call fails.
+
+        An empty string is deliberate: the report then shows the paper's own abstract
+        rather than generic text that would claim relevance the paper may not have.
+        """
+        if self.backend == "none" or not paper.abstract:
+            return ""
         try:
             if self.backend == "github_models":
                 return self._github_models_summary(paper)
@@ -34,17 +42,10 @@ class Summarizer:
                 return self._openai_summary(paper)
             if self.backend == "azure_openai":
                 return self._azure_summary(paper)
-        except Exception:
-            return self._fallback_summary(paper)
-        return self._fallback_summary(paper)
-
-    def _fallback_summary(self, paper: PaperRecord) -> str:
-        return (
-            f"{paper.title} addresses a substantial X-ray imaging or instrumentation problem with strong relevance to "
-            f"synchrotron facilities, CT, detector technology, and NDE/NDT. The method emphasizes high-quality experimental "
-            f"measurement, improved reconstruction or imaging capability, and meaningful scientific impact for materials and "
-            f"industrial characterization."
-        )
+        except Exception as exc:
+            logger.warning("Summarizer backend %s failed for %s: %s", self.backend, paper.doi, exc)
+            return ""
+        return ""
 
     def _github_models_summary(self, paper: PaperRecord) -> str:
         headers = {"Authorization": f"Bearer {self.settings.github_models_token}", "Content-Type": "application/json"}

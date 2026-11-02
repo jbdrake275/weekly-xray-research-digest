@@ -12,7 +12,7 @@ LLM_ENV_VARS = ["GITHUB_MODELS_TOKEN", "OPENAI_API_KEY", "AZURE_OPENAI_ENDPOINT"
 @pytest.fixture(autouse=True)
 def offline_summarizer(monkeypatch):
     # Clear LLM credentials (including any loaded from a local .env) so the
-    # Summarizer always takes its fallback path and tests never hit the network.
+    # Summarizer has no backend and tests never hit the network.
     for name in LLM_ENV_VARS:
         monkeypatch.delenv(name, raising=False)
 

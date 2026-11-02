@@ -100,7 +100,13 @@ def main(argv: list[str] | None = None, providers: list[LiteratureProvider] | No
 
     selected = PaperRanker().rank(new_papers)[: args.top_n]
     today = until.isoformat()
-    report_path = ReportGenerator().write_report(selected, ensure_directory(args.output_dir) / f"weekly-xray-digest-{today}.md")
+    report_path = ReportGenerator().write_report(
+        selected,
+        ensure_directory(args.output_dir) / f"weekly-xray-digest-{today}.md",
+        since=since,
+        until=until,
+        candidate_count=len(new_papers),
+    )
     logger.info("Report written to %s", report_path)
 
     if args.publish_report:
