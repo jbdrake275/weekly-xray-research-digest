@@ -85,8 +85,10 @@ def crossref_payload(date_parts):
 
 
 def test_crossref_parses_full_date(fake_get):
-    fake_get(crossref_provider, crossref_payload([2024, 6, 15]))
+    calls = fake_get(crossref_provider, crossref_payload([2024, 6, 15]))
     papers = crossref_provider.CrossrefProvider().search(["detector"], limit=5)
+    # Crossref /works rejects has-doi with HTTP 400 (checked against the live API 2026-11-02).
+    assert "has-doi" not in calls["params"].get("filter", "")
     assert len(papers) == 1
     assert papers[0].publication_date == date(2024, 6, 15)
     assert papers[0].authors == ["Curie"]

@@ -30,7 +30,6 @@ class CrossrefProvider(LiteratureProvider):
             "select": "DOI,title,author,abstract,published-print,published-online,container-title,URL,score,is-referenced-by-count",
             "query.title": query,
             "rows": min(limit, 50),
-            "filter": "has-doi:true",
         }
         response = requests.get(url, params=params, headers=headers, timeout=30)
         response.raise_for_status()
