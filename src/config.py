@@ -18,6 +18,7 @@ class Settings:
     azure_openai_key: str = ""
     log_level: str = "INFO"
     max_results_per_provider: int = 20
+    lookback_days: int = 14
     data_dir: Path = Path("data")
     report_dir: Path = Path("reports")
 
@@ -31,6 +32,7 @@ class Settings:
             azure_openai_key=os.getenv("AZURE_OPENAI_KEY", ""),
             log_level=os.getenv("LOG_LEVEL", "INFO"),
             max_results_per_provider=int(os.getenv("MAX_RESULTS_PER_PROVIDER", "20")),
+            lookback_days=int(os.getenv("LOOKBACK_DAYS", "14")),
             data_dir=Path(os.getenv("DATA_DIR", "data")),
             report_dir=Path(os.getenv("REPORT_OUTPUT_DIR", "reports")),
         )

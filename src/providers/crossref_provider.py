@@ -17,7 +17,9 @@ class CrossrefProvider(LiteratureProvider):
         settings = get_settings()
         self.email = email or settings.openalex_email
 
-    def search(self, topics: Iterable[str], limit: int = 20) -> list[PaperRecord]:
+    def search(
+        self, topics: Iterable[str], limit: int = 20, since: date | None = None, until: date | None = None
+    ) -> list[PaperRecord]:
         topic_terms = list(topics)
         if not topic_terms:
             topic_terms = ["X-ray tomography", "synchrotron radiation"]
@@ -31,6 +33,13 @@ class CrossrefProvider(LiteratureProvider):
             "query.title": query,
             "rows": min(limit, 50),
         }
+        filters = []
+        if since:
+            filters.append(f"from-pub-date:{since.isoformat()}")
+        if until:
+            filters.append(f"until-pub-date:{until.isoformat()}")
+        if filters:
+            params["filter"] = ",".join(filters)
         response = requests.get(url, params=params, headers=headers, timeout=30)
         response.raise_for_status()
         payload = response.json().get("message", {})

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import requests
@@ -35,6 +35,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--limit", type=int, default=settings.max_results_per_provider, help="Maximum results per provider.")
     parser.add_argument("--top-n", type=int, default=4, help="Number of ranked papers to include in the report.")
     parser.add_argument(
+        "--days",
+        type=int,
+        default=settings.lookback_days,
+        help="Only fetch papers published in the last N days (through today).",
+    )
+    parser.add_argument(
         "--publish-report",
         action="store_true",
         help="Record selected papers in the history and export a CSV. Without this flag the run is a dry run.",
@@ -42,11 +48,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
-def collect_papers(providers: list[LiteratureProvider], topics: list[str], limit: int, logger) -> list[PaperRecord]:
+def collect_papers(
+    providers: list[LiteratureProvider], topics: list[str], limit: int, since: date, until: date, logger
+) -> list[PaperRecord]:
     papers: list[PaperRecord] = []
     for provider in providers:
         try:
-            results = provider.search(topics, limit=limit)
+            results = provider.search(topics, limit=limit, since=since, until=until)
         except requests.RequestException as exc:
             logger.warning("Provider %s failed: %s", provider.name, exc)
             continue
@@ -75,7 +83,13 @@ def main(argv: list[str] | None = None, providers: list[LiteratureProvider] | No
     topics = args.topics or DEFAULT_TOPICS
     providers = providers if providers is not None else [OpenAlexProvider(), CrossrefProvider()]
 
-    papers = dedupe_by_doi(collect_papers(providers, topics, args.limit, logger))
+    # The window is deliberately longer than the weekly cadence: indexes lag behind
+    # publication, so overlapping windows catch late arrivals and the history check
+    # below keeps the overlap from repeating papers.
+    until = date.today()
+    since = until - timedelta(days=args.days)
+    logger.info("Searching publications from %s to %s", since, until)
+    papers = dedupe_by_doi(collect_papers(providers, topics, args.limit, since, until, logger))
     history = HistoryManager(ensure_directory(args.data_dir) / "history.json")
     new_papers = DuplicateChecker(history).filter_new(papers)
     logger.info("%d unique papers, %d not in history", len(papers), len(new_papers))
@@ -85,7 +99,7 @@ def main(argv: list[str] | None = None, providers: list[LiteratureProvider] | No
         return 1
 
     selected = PaperRanker().rank(new_papers)[: args.top_n]
-    today = date.today().isoformat()
+    today = until.isoformat()
     report_path = ReportGenerator().write_report(selected, ensure_directory(args.output_dir) / f"weekly-xray-digest-{today}.md")
     logger.info("Report written to %s", report_path)
 

@@ -62,6 +62,22 @@ def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
     assert paper.abstract == "Tomography of foams and of gels."
 
 
+def test_date_window_becomes_api_filters(fake_get):
+    window = {"since": date(2026, 10, 19), "until": date(2026, 11, 2)}
+
+    calls = fake_get(openalex_provider, {"results": []})
+    openalex_provider.OpenAlexProvider().search(["CT"], **window)
+    assert calls["params"]["filter"] == "has_doi:true,from_publication_date:2026-10-19,to_publication_date:2026-11-02"
+
+    calls = fake_get(crossref_provider, {"message": {"items": []}})
+    crossref_provider.CrossrefProvider().search(["CT"], **window)
+    assert calls["params"]["filter"] == "from-pub-date:2026-10-19,until-pub-date:2026-11-02"
+
+    calls = fake_get(crossref_provider, {"message": {"items": []}})
+    crossref_provider.CrossrefProvider().search(["CT"])
+    assert "filter" not in calls["params"]
+
+
 def test_reconstruct_abstract_handles_missing_index():
     assert openalex_provider.reconstruct_abstract(None) == ""
     assert openalex_provider.reconstruct_abstract({}) == ""

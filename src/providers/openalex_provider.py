@@ -27,17 +27,24 @@ class OpenAlexProvider(LiteratureProvider):
         settings = get_settings()
         self.email = email or settings.openalex_email
 
-    def search(self, topics: Iterable[str], limit: int = 20) -> list[PaperRecord]:
+    def search(
+        self, topics: Iterable[str], limit: int = 20, since: date | None = None, until: date | None = None
+    ) -> list[PaperRecord]:
         query_terms = list(topics)
         if not query_terms:
             query_terms = ["X-ray tomography", "synchrotron radiation"]
 
         query = " OR ".join(f'"{term}"' for term in query_terms)
+        filters = ["has_doi:true"]
+        if since:
+            filters.append(f"from_publication_date:{since.isoformat()}")
+        if until:
+            filters.append(f"to_publication_date:{until.isoformat()}")
         params = {
             "search": query,
             "per-page": min(limit, 50),
             "mailto": self.email or "research-digest@example.com",
-            "filter": "has_doi:true,publication_year:>2000",
+            "filter": ",".join(filters),
         }
         response = requests.get("https://api.openalex.org/works", params=params, timeout=30)
         response.raise_for_status()
