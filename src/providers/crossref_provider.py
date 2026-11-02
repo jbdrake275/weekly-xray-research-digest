@@ -49,9 +49,10 @@ class CrossrefProvider(LiteratureProvider):
             published = item.get("published-print") or item.get("published-online") or {}
             date_value = None
             if published:
-                year = published.get("date-parts", [[None]])[0][0]
-                month = published.get("date-parts", [[None, None]])[0][1]
-                day = published.get("date-parts", [[None, None, None]])[0][2]
+                # Crossref date-parts holds [year], [year, month] or [year, month, day];
+                # pad so partial dates fall back to the first month/day.
+                parts = ((published.get("date-parts") or [[]])[0] or []) + [None, None, None]
+                year, month, day = parts[:3]
                 if year is not None:
                     try:
                         date_value = date(year, month or 1, day or 1)

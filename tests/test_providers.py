@@ -86,8 +86,11 @@ def test_crossref_parses_full_date(fake_get):
     assert papers[0].journal == "NDT&E Int."
 
 
-@pytest.mark.xfail(strict=True, raises=IndexError, reason="Known bug: year-month dates (no day) index past the end of date-parts.")
-def test_crossref_parses_partial_date(fake_get):
-    fake_get(crossref_provider, crossref_payload([2024, 6]))
+@pytest.mark.parametrize(
+    ("date_parts", "expected"),
+    [([2024, 6], date(2024, 6, 1)), ([2024], date(2024, 1, 1)), ([None], None), ([], None)],
+)
+def test_crossref_parses_partial_date(fake_get, date_parts, expected):
+    fake_get(crossref_provider, crossref_payload(date_parts))
     papers = crossref_provider.CrossrefProvider().search(["detector"], limit=5)
-    assert papers[0].publication_date == date(2024, 6, 1)
+    assert papers[0].publication_date == expected
