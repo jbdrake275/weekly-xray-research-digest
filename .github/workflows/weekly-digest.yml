@@ -24,6 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Tests are offline; failing here stops the run before anything is committed or released.
+      - name: Run tests
+        run: python -m pytest
+
       - name: Generate digest
         env:
           OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
