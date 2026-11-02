@@ -1,78 +1,63 @@
 from __future__ import annotations
 
-from datetime import date
-from typing import Iterable
+from src.models import PaperRecord
 
-import requests
+DEFAULT_WEIGHTS = {
+    "scientific_significance": 0.25,
+    "experimental_novelty": 0.20,
+    "technical_impact": 0.20,
+    "instrumentation_relevance": 0.15,
+    "citation_influence": 0.10,
+    "cnde_relevance": 0.10,
+}
 
-from src.config import get_settings
-from src.logging_config import PaperRecord
-from src.providers.base_provider import LiteratureProvider
+KEYWORD_MAP = {
+    "scientific_significance": ["phase contrast", "tomography", "synchrotron", "xfel", "diffraction", "spectroscopy"],
+    "experimental_novelty": ["new", "novel", "first", "development", "method", "instrumentation", "technique"],
+    "technical_impact": ["reconstruction", "detector", "optics", "imaging", "contrast", "modality"],
+    "instrumentation_relevance": ["detector", "instrument", "source", "optics", "beamline", "sensor"],
+    "cnde_relevance": ["nde", "ndt", "inspection", "industrial", "materials", "defect"],
+}
 
 
-class CrossrefProvider(LiteratureProvider):
-    name = "crossref"
+def normalized_score(value: float, ceiling: float) -> float:
+    if ceiling <= 0:
+        return 0.0
+    return min(100.0, max(0.0, (value / ceiling) * 100.0))
 
-    def __init__(self, email: str | None = None) -> None:
-        settings = get_settings()
-        self.email = email or settings.openalex_email
 
-    def search(self, topics: Iterable[str], limit: int = 20) -> list[PaperRecord]:
-        topic_terms = list(topics)
-        if not topic_terms:
-            topic_terms = ["X-ray tomography", "synchrotron radiation"]
-        query = " OR ".join(topic_terms)
-        headers = {}
-        if self.email:
-            headers["User-Agent"] = f"weekly-xray-research-digest/{self.email}"
-        url = "https://api.crossref.org/works"
-        params = {
-            "select": "DOI,title,author,abstract,published-print,published-online,container-title,URL,score,is-referenced-by-count",
-            "query.title": query,
-            "rows": min(limit, 50),
-            "filter": "has-doi:true",
-        }
-        response = requests.get(url, params=params, headers=headers, timeout=30)
-        response.raise_for_status()
-        payload = response.json().get("message", {})
-        items = payload.get("items", [])
+def score_paper(paper: PaperRecord) -> dict[str, float]:
+    text = " ".join([
+        paper.title,
+        paper.abstract,
+        " ".join(paper.topics),
+        paper.journal,
+    ]).lower()
 
-        papers: list[PaperRecord] = []
-        for item in items:
-            doi = item.get("DOI", "")
-            if not doi:
-                continue
-            title = item.get("title", ["Untitled"])[0] if item.get("title") else "Untitled"
-            authors = [author.get("family", "") for author in item.get("author", []) if author.get("family")]
-            abstract = item.get("abstract") or ""
-            abstract = abstract.replace("\n", " ") if abstract else ""
-            published = item.get("published-print") or item.get("published-online") or {}
-            date_value = None
-            if published:
-                year = published.get("date-parts", [[None]])[0][0]
-                month = published.get("date-parts", [[None, None]])[0][1]
-                day = published.get("date-parts", [[None, None, None]])[0][2]
-                if year is not None:
-                    try:
-                        date_value = date(year, month or 1, day or 1)
-                    except ValueError:
-                        date_value = None
-            journal = ", ".join(item.get("container-title", []))
-            url = item.get("URL", "")
-            citation_count = item.get("is-referenced-by-count", 0)
-            paper = PaperRecord(
-                title=title,
-                authors=authors,
-                abstract=abstract,
-                journal=journal,
-                publication_date=date_value,
-                doi=doi,
-                url=url,
-                source=self.name,
-                topics=["X-ray", "imaging"],
-                citation_count=citation_count,
-                is_peer_reviewed=True,
-                raw=item,
-            )
-            papers.append(paper)
-        return papers
+    citation_score = normalized_score(float(paper.citation_count), 300.0)
+    scientific = score_keywords(text, KEYWORD_MAP["scientific_significance"]) * 1.2
+    novelty = score_keywords(text, KEYWORD_MAP["experimental_novelty"]) * 1.1
+    technical = score_keywords(text, KEYWORD_MAP["technical_impact"]) * 1.3
+    instrumentation = score_keywords(text, KEYWORD_MAP["instrumentation_relevance"]) * 1.2
+    cnde = score_keywords(text, KEYWORD_MAP["cnde_relevance"]) * 1.15
+
+    components = {
+        "scientific_significance": round(min(100.0, scientific), 2),
+        "experimental_novelty": round(min(100.0, novelty), 2),
+        "technical_impact": round(min(100.0, technical), 2),
+        "instrumentation_relevance": round(min(100.0, instrumentation), 2),
+        "citation_influence": round(citation_score, 2),
+        "cnde_relevance": round(min(100.0, cnde), 2),
+    }
+    weighted = sum(components[key] * DEFAULT_WEIGHTS[key] for key in DEFAULT_WEIGHTS)
+    paper.score_components = components
+    paper.final_score = round(weighted, 2)
+    return components
+
+
+def score_keywords(text: str, keywords: list[str]) -> float:
+    matches = 0
+    for keyword in keywords:
+        if keyword in text:
+            matches += 1
+    return min(100.0, (matches / max(1, len(keywords))) * 100.0)

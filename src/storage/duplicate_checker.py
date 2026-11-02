@@ -1,50 +1,23 @@
 from __future__ import annotations
 
-import csv
-import json
-from pathlib import Path
-
-from src.logging_config import PaperRecord
+from src.models import PaperRecord
+from src.storage.history_manager import HistoryManager
 
 
-class HistoryManager:
-    def __init__(self, history_path: str | Path) -> None:
-        self.history_path = Path(history_path)
-        self.history_path.parent.mkdir(parents=True, exist_ok=True)
-        if not self.history_path.exists():
-            self.history_path.write_text(json.dumps({"papers": []}, indent=2), encoding="utf-8")
+class DuplicateChecker:
+    def __init__(self, history_manager: HistoryManager) -> None:
+        self.history_manager = history_manager
 
-    def load(self) -> list[dict]:
-        payload = json.loads(self.history_path.read_text(encoding="utf-8"))
-        return payload.get("papers", [])
+    def is_duplicate(self, paper: PaperRecord) -> bool:
+        for entry in self.history_manager.load():
+            if not entry:
+                continue
+            same_doi = bool(entry.get("doi")) and entry.get("doi") == paper.doi
+            same_title = bool(entry.get("title")) and entry.get("title").strip().lower() == paper.title.strip().lower()
+            same_year = entry.get("publication_date") and paper.publication_date and entry.get("publication_date")[:4] == str(paper.publication_date.year)
+            if same_doi or same_title or same_year:
+                return True
+        return False
 
-    def add_papers(self, papers: list[PaperRecord]) -> None:
-        current = self.load()
-        for paper in papers:
-            current.append({
-                "title": paper.title,
-                "doi": paper.doi,
-                "publication_date": paper.publication_date.isoformat() if paper.publication_date else None,
-                "category": paper.category,
-                "source": paper.source,
-                "final_score": paper.final_score,
-            })
-        self.history_path.write_text(json.dumps({"papers": current}, indent=2), encoding="utf-8")
-
-    def export_selected_csv(self, papers: list[PaperRecord], output_path: str | Path) -> Path:
-        path = Path(output_path)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        fieldnames = ["title", "doi", "publication_date", "category", "source", "score"]
-        with path.open("w", newline="", encoding="utf-8") as handle:
-            writer = csv.DictWriter(handle, fieldnames=fieldnames)
-            writer.writeheader()
-            for paper in papers:
-                writer.writerow({
-                    "title": paper.title,
-                    "doi": paper.doi,
-                    "publication_date": paper.publication_date.isoformat() if paper.publication_date else "",
-                    "category": paper.category,
-                    "source": paper.source,
-                    "score": paper.final_score,
-                })
-        return path
+    def filter_new(self, papers: list[PaperRecord]) -> list[PaperRecord]:
+        return [paper for paper in papers if not self.is_duplicate(paper)]

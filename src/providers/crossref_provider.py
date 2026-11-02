@@ -1,83 +1,75 @@
 from __future__ import annotations
 
-import json
 from datetime import date
 from typing import Iterable
 
 import requests
 
 from src.config import get_settings
-from src.logging_config import PaperRecord
+from src.models import PaperRecord
 from src.providers.base_provider import LiteratureProvider
 
 
-class OpenAlexProvider(LiteratureProvider):
-    name = "openalex"
+class CrossrefProvider(LiteratureProvider):
+    name = "crossref"
 
     def __init__(self, email: str | None = None) -> None:
         settings = get_settings()
         self.email = email or settings.openalex_email
 
     def search(self, topics: Iterable[str], limit: int = 20) -> list[PaperRecord]:
-        query_terms = list(topics)
-        if not query_terms:
-            query_terms = ["X-ray tomography", "synchrotron radiation"]
-
-        query = " OR ".join(f'"{term}"' for term in query_terms)
+        topic_terms = list(topics)
+        if not topic_terms:
+            topic_terms = ["X-ray tomography", "synchrotron radiation"]
+        query = " OR ".join(topic_terms)
+        headers = {}
+        if self.email:
+            headers["User-Agent"] = f"weekly-xray-research-digest/{self.email}"
+        url = "https://api.crossref.org/works"
         params = {
-            "search": query,
-            "per-page": min(limit, 50),
-            "mailto": self.email or "research-digest@example.com",
-            "filter": "has_doi:true,publication_year:>2000",
+            "select": "DOI,title,author,abstract,published-print,published-online,container-title,URL,score,is-referenced-by-count",
+            "query.title": query,
+            "rows": min(limit, 50),
+            "filter": "has-doi:true",
         }
-        response = requests.get("https://api.openalex.org/works", params=params, timeout=30)
+        response = requests.get(url, params=params, headers=headers, timeout=30)
         response.raise_for_status()
-        payload = response.json()
-        results = payload.get("results", [])
+        payload = response.json().get("message", {})
+        items = payload.get("items", [])
 
         papers: list[PaperRecord] = []
-        for item in results:
-            doi = item.get("doi") or item.get("ids", {}).get("doi")
+        for item in items:
+            doi = item.get("DOI", "")
             if not doi:
                 continue
-            doi = doi.replace("https://doi.org/", "") if doi.startswith("https://") else doi
-            title = item.get("title") or "Untitled"
+            title = item.get("title", ["Untitled"])[0] if item.get("title") else "Untitled"
+            authors = [author.get("family", "") for author in item.get("author", []) if author.get("family")]
             abstract = item.get("abstract") or ""
             abstract = abstract.replace("\n", " ") if abstract else ""
-            publication_date_value = item.get("publication_date")
-            publication_date = None
-            if publication_date_value:
-                try:
-                    publication_date = date.fromisoformat(publication_date_value)
-                except ValueError:
-                    publication_date = None
-
-            primary = item.get("primary_location") or {}
-            source_name = ""
-            if primary.get("source"):
-                source_name = primary["source"].get("display_name", "")
-            journal = source_name
-
-            authors = []
-            for authorship in item.get("authorships", []):
-                author = authorship.get("author") or {}
-                name = author.get("display_name")
-                if name:
-                    authors.append(name)
-
-            url = primary.get("landing_page_url") or item.get("id") or ""
-            topics_list = [concept.get("display_name", "") for concept in item.get("concepts", [])[:5] if concept.get("display_name")]
-            citation_count = item.get("cited_by_count", 0)
+            published = item.get("published-print") or item.get("published-online") or {}
+            date_value = None
+            if published:
+                year = published.get("date-parts", [[None]])[0][0]
+                month = published.get("date-parts", [[None, None]])[0][1]
+                day = published.get("date-parts", [[None, None, None]])[0][2]
+                if year is not None:
+                    try:
+                        date_value = date(year, month or 1, day or 1)
+                    except ValueError:
+                        date_value = None
+            journal = ", ".join(item.get("container-title", []))
+            url = item.get("URL", "")
+            citation_count = item.get("is-referenced-by-count", 0)
             paper = PaperRecord(
                 title=title,
                 authors=authors,
                 abstract=abstract,
                 journal=journal,
-                publication_date=publication_date,
+                publication_date=date_value,
                 doi=doi,
                 url=url,
                 source=self.name,
-                topics=topics_list,
+                topics=["X-ray", "imaging"],
                 citation_count=citation_count,
                 is_peer_reviewed=True,
                 raw=item,
