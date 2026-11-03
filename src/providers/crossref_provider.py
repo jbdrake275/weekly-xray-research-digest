@@ -101,7 +101,7 @@ class CrossrefProvider(LiteratureProvider):
                 doi=doi,
                 url=url,
                 source=self.name,
-                topics=["X-ray", "imaging"],
+                topics=[],
                 citation_count=citation_count,
                 work_type=work_type,
                 is_peer_reviewed=work_type in PEER_REVIEWED_TYPES,

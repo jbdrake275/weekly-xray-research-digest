@@ -83,6 +83,8 @@ def test_crossref_preprint_authors_type_and_posted_date(fake_get):
     assert paper.publication_date == date(2026, 10, 28)
     assert paper.work_type == "posted-content"
     assert paper.is_peer_reviewed is False
+    # Crossref has no subject tags in this query; none should be invented.
+    assert paper.topics == []
 
 
 def test_openalex_work_type_sets_peer_review(fake_get):
