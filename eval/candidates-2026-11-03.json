@@ -1,0 +1,1506 @@
+{
+  "created": "2026-11-03",
+  "window": [
+    "2026-10-20",
+    "2026-11-03"
+  ],
+  "topics": [
+    "X-ray computed tomography",
+    "synchrotron radiation",
+    "X-ray detector",
+    "X-ray phase contrast imaging",
+    "X-ray nondestructive evaluation"
+  ],
+  "limit_per_provider": 20,
+  "papers": [
+    {
+      "title": "Synchrotron Radiation in Photonic Materials Research: Electronic Excitations, Defects, and Ultrafast Processes",
+      "authors": [
+        "Панкратов В. А."
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "CyberLeninK (CyberLeninka)",
+      "publication_date": "2026-10-27",
+      "doi": "10.24412/cl-35039-2026-26-321",
+      "url": "https://cyberleninka.ru/article/n/synchrotron-radiation-in-photonic-materials-research-electronic-excitations-defects-and-ultrafast-processes",
+      "source": "openalex",
+      "topics": [
+        "Ultrashort pulse",
+        "Materials science",
+        "Optoelectronics",
+        "Synchrotron radiation",
+        "Photonics"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 8.83,
+      "id": "P01",
+      "current_rank": 34,
+      "work_type": "article"
+    },
+    {
+      "title": "Spectral Properties of X-Ray Flares in Gamma-Ray Bursts",
+      "authors": [
+        "Bi",
+        "Jiang",
+        "Mao"
+      ],
+      "abstract": "We conducted a systematic spectral analysis of the X-ray flares of gamma-ray bursts (GRBs) observed by Swift/X-ray Telescope from 2005 April to 2015 March. The sample includes 521 flares from 206 GRBs. The GRBs cover the three subtypes: X-ray flashes (XRFs), X-ray-rich GRBs (XRRs), and classical GRBs (C-GRBs). We used a simple power-law model to fit the spectra during the flares, as well as to fit the preflare and postflare afterglow emissions, and obtained the parameters such as photon index and intrinsic hydrogen column density ( N H ). By comparing the spectral characteristics of flares, prompt emission, and afterglow emission, and analyzing the temporal evolution of the X-ray flare spectra, we obtained the following main conclusions. (1) The spectrum during the flare phase is significantly harder than that of the preflare and postflare phases, while there is no obvious difference in the spectrum between the preflare and postflare phases. (2) The intrinsic N H shows no significant change between the preflare and flare phases, but significantly decreases after the flare. (3) The overall X-ray flare spectra are softer than those of the prompt emission. (4) For GRBs with multiple flares, the photon index softens with increasing flare peak time. (5) The X-ray flare spectra in XRFs are softer than those in C-GRBs. These results support the origin of X-ray flares being from the internal shock radiation driven by the late activity of the GRB central engine.",
+      "summary": "",
+      "journal": "The Astrophysical Journal",
+      "publication_date": "2026-11-10",
+      "doi": "10.3847/1538-4357/aeaff3",
+      "url": "https://doi.org/10.3847/1538-4357/aeaff3",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 6.25,
+      "id": "P02",
+      "current_rank": 37,
+      "work_type": ""
+    },
+    {
+      "title": "Comparative Study of Dual-energy X‑ray Absorptiometry versus Multislice Computed Tomography for Vertebral Height Measurement",
+      "authors": [
+        "Chan",
+        "Hsu",
+        "Vy",
+        "Lu",
+        "Ko",
+        "Wu",
+        "Chao",
+        "Hung",
+        "Kosik",
+        "Chan"
+      ],
+      "abstract": "Objectives This study investigates the discrepancies between two-dimensional (2D) and three-dimensional (3D) imaging-based approaches for vertebral height assessment. Methods Lumbar spine CT scans and dual-energy X‑ray absorptiometry (DXA) studies within 6 months were reviewed. Vertebral fracture assessment was performed by converting CT-measured height ratios into Genant grades using three methods: conventional (A), consensus (B), and global search (C). Dataset 1 included 34 patients (191 vertebrae; 1,302 CT slices) with CT and DXA; Dataset 2 included 114 patients with CT only. Results No significant difference was observed between Method A and DXA-based grading (p = 0.33). In contrast, Methods B and C significantly differed from DXA (p &lt; 0.001, both). Discrepancies were greatest for vertebrae graded as 1 by Method A (98 and 166 vertebrae reclassified by Methods B and C, respectively). Compared with Method A, Method B revealed greater height reductions in Grades 0, 1, and 2 vertebrae by 9.00, 9.13, and 13.75 percentage points, respectively. For Method C, these reductions were 10.71, 10.14, and 12.35 percentage points, respectively. Conclusions Compared with DXA, continuous sagittal CT images improved detection of greatest vertebral height loss, especially for Grade 1 reductions. When applying 2D criteria to CT scans, clinicians should be cautious of a tendency to overestimate vertebral height loss. Advances in knowledge This first study demonstrates that the 3D method yields vertebral height reduction 10.84 percentage points greater than the 2D method. Therefore, overestimation of vertebral height reduction on CT should be considered when radiological classification criteria are applied.",
+      "summary": "",
+      "journal": "British Journal of Radiology",
+      "publication_date": "2026-11-02",
+      "doi": "10.1093/bjr/tqag265",
+      "url": "https://doi.org/10.1093/bjr/tqag265",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 21.87,
+      "id": "P03",
+      "current_rank": 5,
+      "work_type": ""
+    },
+    {
+      "title": "Characterization of Axial Geometric Variations and Dimensional Deviation Analysis of High-Speed Ball Bearings for New Energy Vehicles Using X-Ray Computed Tomography",
+      "authors": [
+        "Yanan Zhang",
+        "Feng Zhang",
+        "Jia Songyang",
+        "Sier Deng",
+        "Hongjian Wu",
+        "Jing Pang"
+      ],
+      "abstract": "As new energy vehicle drive motors develop toward higher rotational speeds and power levels, a more comprehensive characterization of the geometric condition of high-speed ball bearings is increasingly required, while conventional single-section measurements have difficulty capturing continuous axial geometric variations. To characterize continuous axial geometric variations in high-speed ball bearings for new energy vehicle drive motors and explore whether these variations exhibit trends consistent with vibration responses, four typical bearing models were investigated using X-ray computed tomography (XCT), reconstruction, and dimensional extraction. Equivalent inner and outer diameters were obtained from consecutive sections within the selected axial profile segment. The mean values of the equivalent inner and outer diameters were used to represent the dimensional level, while the standard deviation and range were used to quantify the axial fluctuations. The results showed that the equivalent inner and outer diameters of different bearing samples exhibited different degrees of axial variation within the selected axial profile segments. Meanwhile, the mean equivalent inner and outer diameters measured by XCT differed from the corresponding nominal dimensions. Further comparison showed that, within the current sample set, no stable correspondence was observed between the axial variation descriptors of the XCT-derived equivalent inner and outer diameters and the vibration test results. XCT can nondestructively acquire geometric information from consecutive axial sections and quantitatively characterize equivalent inner and outer diameter fluctuations, complementing single-section roundness measurement and providing theoretical guidance for surface-quality evaluation and manufacturing-process improvement.",
+      "summary": "",
+      "journal": "Applied Sciences",
+      "publication_date": "2026-10-25",
+      "doi": "10.3390/app162110563",
+      "url": "https://doi.org/10.3390/app162110563",
+      "source": "openalex",
+      "topics": [
+        "Ball (mathematics)",
+        "Roundness (object)",
+        "Vibration",
+        "Bearing (navigation)",
+        "Materials science"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 16.31,
+      "id": "P04",
+      "current_rank": 14,
+      "work_type": "article"
+    },
+    {
+      "title": "THz near-field nanoscopy employing coherent synchrotron radiation",
+      "authors": [
+        "Alexander A. Veber",
+        "Maria Eleonora Temperini",
+        "Ljiljana Puškar",
+        "Ulrich Schade"
+      ],
+      "abstract": "We demonstrate that the coherent synchrotron radiation can be used for the scattering type near-field scanning optical microscopy (s-SNOM). Using a commercially available s-SNOM coupled to a synchrotron source, we perform THz imaging and spectroscopy experiments in the spectral range of 25–55 cm−1 and spatial resolution of 60 nm. It is shown that the same optical configuration can be used for nanoscopy in the range of 25–4000 cm−1. Conducting experiments across the THz, far-, and mid-infrared spectral ranges within a single setup offers a unique capability for the ultrabroadband characterization of complex materials in both life and material sciences at the nanoscale.",
+      "summary": "",
+      "journal": "Applied Physics Letters",
+      "publication_date": "2026-10-26",
+      "doi": "10.1063/5.0348188",
+      "url": "https://doi.org/10.1063/5.0348188",
+      "source": "openalex",
+      "topics": [
+        "Synchrotron radiation",
+        "Optics",
+        "Synchrotron",
+        "Materials science",
+        "Characterization (materials science)"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 26.58,
+      "id": "P05",
+      "current_rank": 3,
+      "work_type": "article"
+    },
+    {
+      "title": "Bubble dynamics on top of protruding objects observed with X-ray phase-contrast high-speed imaging",
+      "authors": [
+        "Christiane Lechner",
+        "Alexander Rack",
+        "Robert Mettin",
+        "Bratislav Lukic",
+        "Max Koch",
+        "Hannes Hoeppe",
+        "Juan Rosselló"
+      ],
+      "abstract": "This study presents a comprehensive, qualitative investigation of the complex dynamics of laser-induced cavitation bubbles near rigid, protruding objects with various cross-sectional geometries. We employ a threefold approach that combines synchronized optical videography, high-speed X-ray phase-contrast imaging (at MHz frame rates), and three-dimensional compressible multiphase flow simulations. While conventional optical high-speed imaging is often limited by refraction, which obscures the bubble interior, synchrotron X-ray radiation enables unprecedented visualization of internal structures, including secondary cavitation, splashing, and jetting dynamics.Four distinct geometries are investigated: a cylindrical pillar, a cone, a vertical blade, and a three-point star column. We identify several universal qualitative features of bubbles generated above both axisymmetric and anisotropic columns over normalized stand-off distances D* in the range [0.047, 0.79] and normalized object widths β in the range [0.251, 0.893], including configurations where the bubble is generated off-center relative to the column. Results show a clear correlation between bubble dynamics and a specific cross-sectional geometry.Further, effects of small-scale features of the object surfaces, such as roughness and sharpness of edges, occur. These can play a role for an apparent pinning of the gas-liquid interface, flow detachment and vortex formation, and secondary cavitation.The combined experimental-numerical framework allows for precise determination of bubble parameters and provides validation of three-dimensional simulations, demonstrating that geometric asymmetries significantly influence jet formation compared with fully axisymmetric configurations.",
+      "summary": "",
+      "journal": "AIP Publishing",
+      "publication_date": "2026-10-27",
+      "doi": "10.60893/figshare.pof.c.8767611",
+      "url": "https://doi.org/10.60893/figshare.pof.c.8767611",
+      "source": "openalex",
+      "topics": [
+        "Bubble",
+        "Rotational symmetry",
+        "Physics",
+        "Vortex",
+        "Mechanics"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 13.67,
+      "id": "P06",
+      "current_rank": 21,
+      "work_type": "other"
+    },
+    {
+      "title": "Virtual X-ray Tomography as a Digital Twin for NDT and Synchrotron Imaging",
+      "authors": [
+        "Vidal",
+        "Andreasson",
+        "Fahlgren",
+        "Almqvist"
+      ],
+      "abstract": "X-ray computed tomography (XCT) is increasingly used in non-destructive testing (NDT) to inspect complex material combinations and various components. However, the growing complexity of XCT systems and inspection tasks makes experimental planning, parameter optimisation, and result interpretation both time-consuming and resource-intensive. Virtual X-ray simulation offers a powerful complement and addition to physical experimentation by enabling realistic, physics-based representations of XCT systems. This contribution presents how realistic X-ray simulation, based on an extended Beer– Lambert law that accounts for the whole image acquisition system and implemented on high performance graphics processing units (GPUs), can be used to create reliable and trustworthy digital representations of laboratory and industrial XCT scanners. Building on recent developments of the open source gVirtualXray (gVXR) framework, the work demonstrates how virtual XCT can support experiment planning, dosage and experimental setup, develop scripts for more complex experiments involving several motors/detectors, feasibility studies, inspection performance evaluation, develop and evaluate in situ sample environments and subsequent the generation of synthetic data for machine-learning-based NDT. All this information mentioned above can furthermore be used to create even more realistic simulation models to move to a simulation driven and predictive approach. Examples include virtual scan configuration, optimisation of acquisition parameters, assessment of image quality and artefacts, and realistic simulation of detector response and noise. The ability to closely match simulated and experimental data enables systematic investigation of inspection scenarios that would be impractical, dangerous/impossible or costly to reproduce physically. By placing these capabilities in the context of 30 years of NDT evolution, the contribution highlights the transition from purely experimental inspection toward simulation-driven and data-assisted decision support in XCT-based NDT.",
+      "summary": "",
+      "journal": "e-Journal of Nondestructive Testing",
+      "publication_date": "2026-11-01",
+      "doi": "10.58286/35084",
+      "url": "https://doi.org/10.58286/35084",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 76.67
+      },
+      "final_score": 35.48,
+      "id": "P07",
+      "current_rank": 1,
+      "work_type": ""
+    },
+    {
+      "title": "An Improved Phase-Contrast X-Ray Tomography Based on Dual-Domain Combined Deep Learning",
+      "authors": [
+        "Xu",
+        "Liu"
+      ],
+      "abstract": "To address the low contrast of X-ray weakly absorbing materials, phase retrieval (PR) is employed for contrast enhancement and material identification but inevitably leads to structural blurring and boundary smoothing due to its equivalent low-pass filtering. A space–frequency physics-guided neural network (SF-PGNet) is proposed to improve the reconstruction quality of phase-sensitive hard X-ray tomography without additional hardware assistance for weakly absorbing materials. It consists of three sub-networks: (i) the spatial-domain network (SD-Net) predicts a projection-conditioned effective deconvolution kernel (PSF_N) from the measured projection, using the experimentally calibrated effective kernel PSFtot as physical supervision, and applies PSF_N to obtain a sharpness-enhanced sub-image; (ii) the frequency-domain network (FD-Net) predicts the inverse transfer function HN−1 from the measured projection, using analytical H−1(γ) functions generated from physically selected phase-retrieval parameters as supervision, and generates a phase-contrast-enhanced sub-image; and (iii) the dual-domain fusion network integrates the complementary sub-images to produce the final reconstruction. Validation on a polymer phantom and testing on a biological specimen demonstrate that SF-PGNet enhances material contrast and boundary representation, while the learned spatial- and frequency-domain branches remain highly consistent with their corresponding physics-based correction references.",
+      "summary": "",
+      "journal": "Optics",
+      "publication_date": "2026-10-30",
+      "doi": "10.3390/opt7060073",
+      "url": "https://doi.org/10.3390/opt7060073",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 86.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 27.25,
+      "id": "P08",
+      "current_rank": 2,
+      "work_type": ""
+    },
+    {
+      "title": "Insights into damage evolution in SLM IN718 by tracking individual defects through X-ray computed tomography",
+      "authors": [
+        "Liu",
+        "Yang",
+        "Zheng",
+        "Mao",
+        "Cao",
+        "Meng",
+        "Zhou"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Journal of Manufacturing Processes",
+      "publication_date": "2026-11-01",
+      "doi": "10.1016/j.jmapro.2026.10.038",
+      "url": "https://doi.org/10.1016/j.jmapro.2026.10.038",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 11.25,
+      "id": "P09",
+      "current_rank": 30,
+      "work_type": ""
+    },
+    {
+      "title": "Comparison of UNet3+, GAN, and DDIM for single-shot x-ray phase-contrast imaging reconstruction",
+      "authors": [
+        "Jiaming Ye",
+        "Jianheng Huang",
+        "Xin Liu",
+        "Qiong Wang",
+        "Jiaqi Li",
+        "Baotao Mai",
+        "Yaohu Lei"
+      ],
+      "abstract": "Deep learning-based single-shot x-ray phase-contrast reconstruction can suppress artifacts, reduce radiation dose and mechanical positioning requirements. This study compares UNet3+, generative adversarial network (GAN), and denoising diffusion implicit model (DDIM) for phase-contrast imaging in single absorption grating and Talbot-Lau interferometers. A paired simulation dataset was generated using a forward imaging model, and model performance was evaluated on simulated and experimental data. The results indicate that while UNet3+ achieved superior performance in peak signal-to noise ratio (PSNR) and structural similarity index (SSIM) during the training phase, the DDIM model demonstrated stronger distribution modeling capability and better generalization performance in experimental data, providing valuable references for the widespread adoption of X-ray phase-contrast imaging technology.",
+      "summary": "",
+      "journal": "International Conference on Image Processing, Object Detection, and Tracking (IPODT)",
+      "publication_date": "2026-10-28",
+      "doi": "10.1117/12.3136287",
+      "url": "https://doi.org/10.1117/12.3136287",
+      "source": "openalex",
+      "topics": [
+        "Artificial intelligence",
+        "Computer science",
+        "Generalization",
+        "Noise reduction",
+        "Generative adversarial network"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 65.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 14.92,
+      "id": "P10",
+      "current_rank": 16,
+      "work_type": "conference-abstract"
+    },
+    {
+      "title": "X-ray computed tomography for oil distribution analyses in electric machines and gearboxes",
+      "authors": [
+        "Fabian Viermetz",
+        "Andreas Schmidl",
+        "Klaus Achterhold",
+        "Martin Härtl",
+        "Thomas Lohner",
+        "Daniela Pfeiffer",
+        "Franz Pfeiffer",
+        "Karsten Stahl",
+        "Malte Jaensch"
+      ],
+      "abstract": "In drivetrain development, accurate determination of oil distribution in gearboxes and electric machines (e-machines) is increasingly important. In practice, simulation methods are increasingly employed for this purpose to reduce development time and costs. However, ensuring their predictive capability requires thorough validation. Common benchmarks and validation setups often fail to capture the complex multiphase interactions found in real applications, such as electric axle lubrication. This article proposes using X-ray computed tomography (CT) to measure quasi-static oil distribution in gearboxes and e-machines. A feasibility study is provided. Following a brief material evaluation, measurements are performed using surrogate e-machine and gearbox geometries. Flow patterns revealed by measurements and the artifacts they cause are discussed. Consequently, this work demonstrates the potential of X-ray CT to complement standard validation methods, thanks to its unique capabilities, particularly its ability to provide three-dimensional data on oil distribution and drivetrain lubrication, which could enhance the validation of simulation models and drivetrain performance.",
+      "summary": "",
+      "journal": "Results in Engineering",
+      "publication_date": "2026-10-20",
+      "doi": "10.1016/j.rineng.2026.113671",
+      "url": "https://doi.org/10.1016/j.rineng.2026.113671",
+      "source": "openalex",
+      "topics": [
+        "Drivetrain",
+        "Measure (data warehouse)",
+        "Automotive engineering",
+        "Work (physics)",
+        "Complement (music)"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 11.29,
+      "id": "P11",
+      "current_rank": 28,
+      "work_type": "article"
+    },
+    {
+      "title": "Simulation and experimental validation of a meter-scale liquid scintillator detector prototype for cosmic-ray imaging",
+      "authors": [
+        "Xu",
+        "Fu",
+        "Yang",
+        "Li",
+        "Luo",
+        "Fan",
+        "Heng"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "The European Physical Journal Plus",
+      "publication_date": "2026-10-20",
+      "doi": "10.1140/epjp/s13360-026-08433-7",
+      "url": "https://doi.org/10.1140/epjp/s13360-026-08433-7",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 11.67,
+      "id": "P12",
+      "current_rank": 27,
+      "work_type": ""
+    },
+    {
+      "title": "Simulation study of x-ray induced acoustic computed tomography based on clinical linear array for osteoporosis",
+      "authors": [
+        "Zhang",
+        "Su",
+        "Zhao"
+      ],
+      "abstract": "X-ray induced acoustic computed tomography (XACT) is an imaging method based on the thermoelastic effect, which has broad application prospects in the field of medical imaging because of its advantages of low x-ray radiation dose and high spatial resolution. The purpose of this study is to optimize XACT for clinical use with a linear array, thereby enhancing the accuracy of detection of osteoporosis. In the simulation experiment, the length and element number of the linear array were adjusted to achieve optimal imaging quality. Furthermore, XACT images of normal and osteoporotic cervical spines were compared with CT images. This simulation-based feasibility study provides a theoretical foundation and parameter guidance for future experimental validation toward clinical translation of XACT.",
+      "summary": "",
+      "journal": "International Conference on Laser, Materials, and Advanced Manufacturing (LMAM 2026)",
+      "publication_date": "2026-10-26",
+      "doi": "10.1117/12.3129348",
+      "url": "https://doi.org/10.1117/12.3129348",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 14.39,
+      "id": "P13",
+      "current_rank": 18,
+      "work_type": ""
+    },
+    {
+      "title": "Synchrotron-Generated X-Ray Microbeam Irradiation Enhances Hippocampal Neurogenesis in Healthy Rats",
+      "authors": [
+        "Bucci",
+        "Ginerete",
+        "De Saint Jean",
+        "Di Pietro",
+        "Bartzsch",
+        "Barbone",
+        "Ceccherelli",
+        "Coan",
+        "Bruno",
+        "Romanelli",
+        "Bravin",
+        "Battaglia"
+      ],
+      "abstract": "Synchrotron-generated microbeam X-rays are emerging as a novel promising therapeutic strategy for the treatment of drug-resistant epilepsy. One important limiting factor of radiotherapy for the treatment of drug-resistant epilepsy, brain tumors and metastases is the onset of cognitive deficits and dementia due to the reduction of hippocampal neurogenesis. The long-term safety of synchrotron-generated X-ray microbeam irradiation is a concern for translating this novel irradiation technique to humans. Here we show the effects of synchrotron-generated X-ray microbeam irradiation of the dorsal hippocampus in healthy rats in the short-, mid- and long-term. Healthy rats were irradiated with either homogeneous broadbeams (10 Gy) or 2 arrays composed of 10 parallel microbeams each (75 μm wide, spaced 400 μm center-to-center, 300 or 600 Gy) in the cerebral cortex and the dorsal hippocampus. Rats underwent behavioral testing, histological and immunohistochemical analysis, and stereological counts of proliferating cells in the hippocampal dentate gyrus. X-ray microbeam irradiation delivering peak doses of 300 Gy reduced depressive-like behavior, and this antidepressant effect was associated with an increase of hippocampal dentate gyrus neurogenesis in the short-, mid- and long-term. Spontaneous locomotor activity, hippocampal-mediated cognition and microvessels were not affected by X-ray microbeam irradiation. These data shed light on the long-term radiobiology of microbeams in the central nervous system and lay the groundwork for their use in treating drug-resistant epilepsy and other neurological disorders associated with reduced neurogenesis.",
+      "summary": "",
+      "journal": "Radiation Research",
+      "publication_date": "2026-10-27",
+      "doi": "10.1667/rade-26-00007.1",
+      "url": "https://doi.org/10.1667/rade-26-00007.1",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 17.54,
+      "id": "P14",
+      "current_rank": 12,
+      "work_type": ""
+    },
+    {
+      "title": "Phase and Intensity X-ray Linearization with Dark Field (PIXLD): A Fast Algorithm for Low Coherence X-ray Phase-Contrast and Dark Field Imaging Compatible with Medical and Industrial X-ray Sources",
+      "authors": [
+        "Redgate",
+        "MacDonald",
+        "Petruccelli"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Optics Letters",
+      "publication_date": "2026-10-26",
+      "doi": "10.1364/ol.610987",
+      "url": "https://doi.org/10.1364/ol.610987",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 65.0,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 20.92,
+      "id": "P15",
+      "current_rank": 8,
+      "work_type": ""
+    },
+    {
+      "title": "Monte Carlo approximation of partial volume effect for synthetic X-ray computed tomography of spheroidal particles",
+      "authors": [
+        "Pinzon",
+        "Vego"
+      ],
+      "abstract": "X-ray computed tomography is commonly used to investigate the morphology of particles in granular materials, yet the accuracy of the image analysis algorithms that extract these quantities is rarely characterised. A central obstacle is the lack of synthetic ground-truth images that reproduce the partial volume effect (PVE) at particle boundaries, for which analytical solutions exist only for few regular shapes. We present a Monte Carlo method that approximates the PVE for spheroids of arbitrary size, aspect ratio, and orientation.Because the estimate is a binomial proportion, its uncertainty is known in closed form and decreases as N -1/2 MC . The volumetric error is unbiased and below 0.01% across all cases tested, and the orientation error below 0.04 • away from the near-spherical limit. Requiring only an inside/outside test, the method extends to any implicitly defined particle shape, providing a practical basis for benchmarking image analysis algorithms in granular measurement.",
+      "summary": "",
+      "journal": "Measurement Science and Technology",
+      "publication_date": "2026-11-02",
+      "doi": "10.1088/1361-6501/aebca6",
+      "url": "https://doi.org/10.1088/1361-6501/aebca6",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 14.39,
+      "id": "P16",
+      "current_rank": 19,
+      "work_type": ""
+    },
+    {
+      "title": "Torsional damage behaviour of double-layer braided composite tubes with varying braid angles studied by in situ synchrotron X-ray computed tomography (CT)",
+      "authors": [
+        "He",
+        "Zhang",
+        "Islam",
+        "Turpin",
+        "Bao",
+        "Song",
+        "Titarenko",
+        "Katnam",
+        "Potluri",
+        "Withers"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Composites Science and Technology",
+      "publication_date": "2026-11-01",
+      "doi": "10.1016/j.compscitech.2026.111860",
+      "url": "https://doi.org/10.1016/j.compscitech.2026.111860",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 14.33,
+      "id": "P17",
+      "current_rank": 20,
+      "work_type": ""
+    },
+    {
+      "title": "Gamma-ray detector efficiency for radionuclides deposited on the pipe wall surrounding the detector",
+      "authors": [
+        "Thabet",
+        "Badawi",
+        "Hamzawy",
+        "Badawi",
+        "Salem"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Nuclear Engineering and Technology",
+      "publication_date": "2026-11-01",
+      "doi": "10.1016/j.net.2026.104521",
+      "url": "https://doi.org/10.1016/j.net.2026.104521",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 3,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 1.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 11.77,
+      "id": "P18",
+      "current_rank": 26,
+      "work_type": ""
+    },
+    {
+      "title": "Twist-controlled conductive bicomponent yarns: internal structure and properties analyzed by X-ray computed tomography",
+      "authors": [
+        "Hyelim Kim",
+        "Kosei Nakamura",
+        "Kyounghou Kim",
+        "Wonyoung Jeong"
+      ],
+      "abstract": "Conductive bicomponent yarns suitable for apparel manufacturing were fabricated under various twisting conditions, and the correlation between their internal structures and electrical properties was systematically investigated. Three types of conductive bicomponent yarns with identical linear densities were prepared by varying the combinations of first- and second-twist levels using PET yarn and Ag-coated polyamide filaments. Their mechanical, morphological, and electrical properties were evaluated, and non-destructive X-ray computed tomography (X-ray CT) was used to analyze the three-dimensional internal fiber assemblies. X-ray CT analysis revealed pronounced differences in packing density, helical structure, and turn length depending on the twist combination and sequence. Bicomponent yarns with higher internal packing density and shorter turn length exhibited increased inter-filament contact, resulting in a significant reduction in linear resistance. In particular, the PET-AP70/PET-AP70 structure exhibited the densest internal configuration and the lowest electrical resistance with minimal variation. This paper for the first time, quantitatively establishes a structure–property relationship between twist-induced internal architecture and electrical performance in conductive bicomponent yarns using X-ray CT. The findings provide design guidelines for durable and reliable smart textile applications.",
+      "summary": "",
+      "journal": "Fashion and Textiles",
+      "publication_date": "2026-10-28",
+      "doi": "10.1186/s40691-026-00499-2",
+      "url": "https://doi.org/10.1186/s40691-026-00499-2",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Electrical conductor",
+        "Composite material",
+        "Polyamide",
+        "Textile"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 11.98,
+      "id": "P19",
+      "current_rank": 25,
+      "work_type": "article"
+    },
+    {
+      "title": "Linear Polarization of Synchrotron Radiation from Very-small-pitch-angle Electrons",
+      "authors": [
+        "Meng Nie",
+        "Jirong Mao"
+      ],
+      "abstract": "Abstract For synchrotron radiation with pitch angle α ≪ 1/ γ where γ is the electron Lorentz factor, referred to as very-small-pitch-angle synchrotron radiation, the polarization properties differ significantly from those of conventional synchrotron radiation ( α ≫ 1/ γ ). In this work, we investigate the linear polarization characteristics of very-small-pitch-angle synchrotron radiation from relativistic thermal and nonthermal electrons. We calculate the linear polarization by applying power-law and Maxwellian electron energy distributions. Moreover, some synchrotron sources exhibit a hybrid distribution of nonthermal and thermal electrons, and we also calculate the polarization degree for a hybrid electron energy distribution. The calculations are performed in the radio, optical, X-ray, and γ -ray bands. Our results show that the linear polarization degree of very-small-pitch-angle synchrotron radiation is generally lower than that of conventional synchrotron radiation. Very-small-pitch-angle synchrotron radiation from both nonthermal and thermal electrons can produce significant linear polarization. However, the polarization exhibits diverse behaviors across different physical parameters. The general scenario provided in this work can be considered for application to all kinds of synchrotron sources, as we suggest that the very-small-pitch-angle case is crucial for the study of synchrotron polarization.",
+      "summary": "",
+      "journal": "The Astrophysical Journal",
+      "publication_date": "2026-10-27",
+      "doi": "10.3847/1538-4357/aeace3",
+      "url": "https://doi.org/10.3847/1538-4357/aeace3",
+      "source": "openalex",
+      "topics": [
+        "Synchrotron radiation",
+        "Synchrotron",
+        "Physics",
+        "Polarization (electrochemistry)",
+        "Electron"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 8.0,
+      "id": "P20",
+      "current_rank": 35,
+      "work_type": "article"
+    },
+    {
+      "title": "Supplementary material",
+      "authors": [
+        "Alexander Veber",
+        "Maria Eleonora Temperini",
+        "Ljiljana Puskar",
+        "Ulrich Schade"
+      ],
+      "abstract": "details on the spectral response of the InSb detector, the light flux of the coherent and non-coherent synchrotron radiation at BESSY II storage ring as well as the modified optical configuration of the detector.",
+      "summary": "",
+      "journal": "AIP Publishing",
+      "publication_date": "2026-10-29",
+      "doi": "10.60893/figshare.apl.34487757",
+      "url": "https://doi.org/10.60893/figshare.apl.34487757",
+      "source": "openalex",
+      "topics": [
+        "Synchrotron radiation",
+        "Storage ring",
+        "Optics",
+        "Materials science",
+        "Synchrotron"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 21.58,
+      "id": "P21",
+      "current_rank": 7,
+      "work_type": "supplementary-materials"
+    },
+    {
+      "title": "X-ray diffraction from hydrated macromolecular crystals using laser-driven X-ray source",
+      "authors": [
+        "Baranova",
+        "Poulis",
+        "Garayeva",
+        "Pulnova",
+        "Nejdl",
+        "Andreasson",
+        "Khakurel"
+      ],
+      "abstract": "Laser-driven X-ray sources offer a compact route towards laboratory-scale ultrafast structural dynamics. However, due to the low photon flux available from laboratory-scale sources, and the weak diffraction signal from biological specimens, their application to such samples remains challenging. Here, we demonstrate X-ray diffraction from Z-DNA crystals using a laser-driven Cu K α source ( λ = 1.54 Å). Crystals were grown either directly in a custom-designed sample holder, which preserved the hydrated crystallisation environment and allowed in situ diffraction measurements, or using the hanging-drop vapour-diffusion method, followed by loop mounting for diffraction measurements. Well-defined Bragg reflections extending to approximately 2.5 Å resolution were recorded in 1–3 min exposures at a photon flux of approximately 2.2 × 10 5 photons s −1 at the sample. The acquisition time and diffraction quality compare favourably with earlier demonstrations of macromolecular crystal diffraction using laser-driven X-ray sources. These results demonstrate the potential of modern compact laser-driven X-ray sources for structural studies of macromolecular crystals and provide a basis for their future application to laboratory-scale time-resolved crystallography. Synopsis Bragg diffraction to approximately 2.5 Å was recorded in 1–3 min exposures from hydrated Z-DNA crystals using a laser-driven Cu K α X-ray source, both for crystals grown in situ in a custom holder and for loop-mounted crystals. This is a step towards complete data collection and time-resolved crystallography of macromolecules with compact laser-driven sources.",
+      "summary": "",
+      "journal": "",
+      "publication_date": null,
+      "doi": "10.64898/2026.10.19.760121",
+      "url": "https://doi.org/10.64898/2026.10.19.760121",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 15.48,
+      "id": "P22",
+      "current_rank": 15,
+      "work_type": ""
+    },
+    {
+      "title": "Synchrotron radiation of twisted photons",
+      "authors": [
+        "G. Yu. Lazarenko",
+        "N.I. Malygina"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "The European Physical Journal D",
+      "publication_date": "2026-10-30",
+      "doi": "10.1140/epjd/s10053-026-01273-1",
+      "url": "https://doi.org/10.1140/epjd/s10053-026-01273-1",
+      "source": "openalex",
+      "topics": [
+        "Synchrotron radiation",
+        "Photon",
+        "Physics",
+        "High-energy X-rays",
+        "Radiation"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 5.0,
+      "id": "P23",
+      "current_rank": 38,
+      "work_type": "article"
+    },
+    {
+      "title": "X-ray Photoelectron Spectroscopy",
+      "authors": [
+        "Das",
+        "Dwivedi"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Spectroscopy (Second Edition)",
+      "publication_date": "2026-10-20",
+      "doi": "10.1201/9781042025534-13",
+      "url": "https://doi.org/10.1201/9781042025534-13",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 9.33,
+      "id": "P24",
+      "current_rank": 32,
+      "work_type": ""
+    },
+    {
+      "title": "Unsupervised Latent-Space Analysis of X-ray Computed Tomography Images for Physically Informed Interpretation and Quality Control of Gas Hydrate Depressurization Experiments",
+      "authors": [
+        "Sungil Kim",
+        "Taewoong Ahn",
+        "Minhui Lee",
+        "Jaehyoung Lee"
+      ],
+      "abstract": "X-ray computed tomography imaging provides rich structural information for gas hydrate systems, but its interpretation remains challenging because reliable labels are often unavailable during transient multiphase processes. This study proposes an unsupervised deep latent-space framework for the physically informed interpretation and quality control of X-ray computed tomography images from gas hydrate depressurization experiments. The artificial intelligence contribution is the integration of convolutional autoencoder-based representation learning, t-distributed stochastic neighbor embedding visualization, Mahalanobis-distance-based transition analysis, sliced Wasserstein distribution comparison, and train-only anomaly scoring. The engineering application is the interpretation of pressure-dependent gas hydrate dissociation behavior, comparison of repeated core experiments and production-related factors, and detection of abnormal image slices. The learned latent space exhibited a clear pressure-dependent organization, and latent-space tipping analysis estimated the gas hydrate dissociation pressure at 16.0–16.3 MPa, in close agreement with the theoretical equilibrium pressure. Quantitative comparison of paired experiments showed that depressurization rate mainly governed global shifts in latent-space position, whereas initial gas hydrate saturation primarily affected distributional variability. Finally, the train-only anomaly criterion identified atypical slices in both training and unseen test data, including inconsistent slices embedded within otherwise coherent scan sequences. These results demonstrate that unsupervised latent-space analysis provides a practical artificial intelligence framework for transforming unlabeled engineering image data into physically interpretable indicators and quality-control information for gas hydrate depressurization studies.",
+      "summary": "",
+      "journal": "Measurement",
+      "publication_date": "2026-10-28",
+      "doi": "10.1016/j.measurement.2026.123705",
+      "url": "https://doi.org/10.1016/j.measurement.2026.123705",
+      "source": "openalex",
+      "topics": [
+        "Cabin pressurization",
+        "Clathrate hydrate",
+        "Artificial intelligence",
+        "Hydrate",
+        "Computer science"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 11.25,
+      "id": "P25",
+      "current_rank": 29,
+      "work_type": "article"
+    },
+    {
+      "title": "Hardware ray-traced optical-photon Monte Carlo for radiation detector simulation: a TOPAS extension on apple silicon",
+      "authors": [
+        "Goh",
+        "Lee",
+        "Back",
+        "Kwak",
+        "Jung",
+        "Song"
+      ],
+      "abstract": "Objective . Optical-photon Monte Carlo underlies scintillator dosimetry, Cherenkov imaging and other medical-physics applications, yet Geant4 transport of the 10 5 –10 6 optical photons per event on the central processing unit (CPU) makes dataset-scale studies impractical even on a multi-core workstation. We implement and verify a hardware ray-tracing optical-photon transport extension for TOPAS on Apple Silicon. Approach . Charged-particle transport remains in Geant4 on the CPU, where the extension computes the scintillation and Cherenkov yields. Optical-photon generation, propagation and scoring run on the graphics processing unit (GPU), which finds boundaries with its ray-tracing hardware or, for curved solids, by solving the surface equation. The optical processes follow their Geant4 counterparts, with the dielectric–dielectric boundary physics algebraically identical. We verify the extension with ten benchmarks (B1–B10), covering optical physics, detector-chain timing and curved-surface intersection, on an Apple M3 Ultra with an 80-core GPU and a 30-thread CPU baseline. Main results Every verification endpoint passes the equivalence test declared in advance, with margins of ±1% in fluence and ±1 percentage point in the reflection and transmission probabilities. The largest mean summed-fluence deviation is 0.147%, and every summed-fluence 95% confidence interval lies within ±1%. The scintillation–reflector–wavelength-shifting chain agrees to −0.02% and the curved-geometry imaging chain to −0.07%, and the intersection study reproduces the geometric chords of whole solids within a 0.5 mm tolerance. The matched scintillator–lens–camera simulation runs 15.7–32.0 times faster in execution time and about 24 times faster end to end at 10 5 events. Significance . The extension reproduces the analytical or CPU-Geant4 reference process by process within these margins, while accelerating matched transport by more than an order of magnitude. TOPAS scripts gain GPU acceleration without user-written C++, enabling dataset-scale generation of scintillation-dosimetry training sets and Cherenkov-imaging forward models on a single workstation.",
+      "summary": "",
+      "journal": "Physics in Medicine &amp; Biology",
+      "publication_date": "2026-11-14",
+      "doi": "10.1088/1361-6560/aeb84f",
+      "url": "https://doi.org/10.1088/1361-6560/aeb84f",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 13.58,
+      "id": "P26",
+      "current_rank": 23,
+      "work_type": ""
+    },
+    {
+      "title": "A modified synchrotron X-ray phase-contrast micro-CT workflow for non-destructive 3D imaging of intestinal biopsies",
+      "authors": [
+        "Ngew",
+        "Stobbs",
+        "Bessissow",
+        "George"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Talanta",
+      "publication_date": "2026-11-01",
+      "doi": "10.1016/j.talanta.2026.130019",
+      "url": "https://doi.org/10.1016/j.talanta.2026.130019",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 13.67,
+      "id": "P27",
+      "current_rank": 22,
+      "work_type": ""
+    },
+    {
+      "title": "Measurements of the average L-shell fluorescence yield of gadolinium using synchrotron radiations",
+      "authors": [
+        "Kanchan",
+        "Manisha Kumari",
+        "M.K. Tiwari",
+        "Gurjeet Singh"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Nuclear Instruments and Methods in Physics Research Section B Beam Interactions with Materials and Atoms",
+      "publication_date": "2026-10-28",
+      "doi": "10.1016/j.nimb.2026.166358",
+      "url": "https://doi.org/10.1016/j.nimb.2026.166358",
+      "source": "openalex",
+      "topics": [
+        "Gadolinium",
+        "Materials science",
+        "Yield (engineering)",
+        "Synchrotron",
+        "Synchrotron radiation"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 13.06,
+      "id": "P28",
+      "current_rank": 24,
+      "work_type": "article"
+    },
+    {
+      "title": "Interfacial Band Engineering in Solution-Processed CsPbBr3/Cs2AgBiBr6 Thin-Film Heterostructure for X-ray Detectors with High Sensitivity and Reduced Dark Current",
+      "authors": [
+        "Sellan Premkumar",
+        "Krishnaraj Lavanya",
+        "Ganapathi Bharathi",
+        "Sakthivel Chandrasekar",
+        "Pitchaikannu Venkatraman",
+        "Din Nasrud",
+        "D. Nataraj",
+        "Byung Seong Bae",
+        "Damian Chinedu Onwudiwe",
+        "Wei Lei"
+      ],
+      "abstract": "Abstract Metal halide perovskites are promising materials for direct X-ray detection owing to their strong X-ray absorption, solution processability, and efficient charge separation and transport. However, thin-film perovskite detectors usually suffer from trap-assisted recombination and grain-boundary-limited charge transport, while single-crystal devices often show relatively high dark current. Herein, we report a solution-processed CsPbBr3/Cs2AgBiBr6 heterostructure thin-film X-ray detector with suppressed leakage current and improved charge extraction through interfacial band engineering. Structural, optical, and morphological analyses confirmed the formation of crystalline perovskite films with a well-defined CsPbBr3/Cs2AgBiBr6 interface. Under X-ray irradiation, the CsPbBr3/Cs2AgBiBr6 heterostructure device exhibited the photocurrent values of ∼4.57–9.52 nA over the dose rate of 120 to 600 µGy s–1. Although this photocurrent is lower than that of the single-crystal device, the hybrid detector exhibited better device performance with improved sensitivity and good signal-to-noise-relevant performance. The heterostructure thin film detector has achieved sensitivities of 171, 112, and 92 µC Gy–1 cm–2 at dose rates of 120, 240, and 360 µGy s–1, respectively. Based on the SNR = 3 detection criterion, the heterostructure exhibited the lowest detectable dose rate of 34.9 µGy s–1. These results demonstrate that CsPbBr3/Cs2AgBiBr6 heterostructure engineering provides a practical strategy for developing low-dark-current, high-sensitivity perovskite thin-film X-ray detectors.",
+      "summary": "",
+      "journal": "ACS Applied Electronic Materials",
+      "publication_date": "2026-10-31",
+      "doi": "10.1021/acsaelm.6c01631",
+      "url": "https://doi.org/10.1021/acsaelm.6c01631",
+      "source": "openalex",
+      "topics": [
+        "Heterojunction",
+        "Photocurrent",
+        "Materials science",
+        "Optoelectronics",
+        "Dark current"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 11.17,
+      "id": "P29",
+      "current_rank": 31,
+      "work_type": "article"
+    },
+    {
+      "title": "Industrial X-ray computed tomography-based characterization of pore architecture in aluminium-waste-derived geopolymer foams",
+      "authors": [
+        "Sylwia Włodarczak",
+        "Karol Prałat",
+        "Marek Ochowiak",
+        "Justyna Ciemnicka",
+        "Andżelika Krupińska",
+        "Magdalena Matuszak",
+        "Artur Koper",
+        "Roberto Ercoli",
+        "Tomasz Zawilski"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Measurement",
+      "publication_date": "2026-10-23",
+      "doi": "10.1016/j.measurement.2026.123540",
+      "url": "https://doi.org/10.1016/j.measurement.2026.123540",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Geopolymer",
+        "Characterization (materials science)",
+        "Composite material",
+        "Porosity"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 8.83,
+      "id": "P30",
+      "current_rank": 33,
+      "work_type": "article"
+    },
+    {
+      "title": "Technical developments of the air-grid micro-meshes using at the X-ray diagnostic medical imaging by means of the LIGA process",
+      "authors": [
+        "Kazuki Taguchi",
+        "Nobuo Tokiwa",
+        "Kotaro Ishiji",
+        "Hisamitsu Mitsutomi",
+        "Masanori Hidaka"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Microsystem Technologies",
+      "publication_date": "2026-10-31",
+      "doi": "10.1007/s00542-026-06181-3",
+      "url": "https://doi.org/10.1007/s00542-026-06181-3",
+      "source": "openalex",
+      "topics": [
+        "LIGA",
+        "Medical imaging",
+        "Process (computing)",
+        "Detector",
+        "Brightness"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 14.81,
+      "id": "P31",
+      "current_rank": 17,
+      "work_type": "article"
+    },
+    {
+      "title": "Investigating tattoo particles in the porcine model using X-ray phase-contrast tomography",
+      "authors": [
+        "Zandarco",
+        "John",
+        "Wirtensohn",
+        "Pfeiffer",
+        "Beckmann",
+        "Moosmann",
+        "Hammel",
+        "Greving",
+        "Flenner",
+        "Ilg",
+        "Schreiver",
+        "De Cuyper",
+        "Rooms",
+        "Pfeiffer",
+        "Herzen",
+        "Busse"
+      ],
+      "abstract": "Around 20 % of the global population is tattooed, making the dermal deposition and systemic migration of tattoo pigments arelevant public-health concern. Their biokinetics remain poorly understood, partly due to a lack of suitable imaging methods.Here, we present a multi-scale, multimodal imaging approach that combines synchrotron-radiation single-grid phase-contrastX-ray micro-computed tomography (micro-CT), synchrotron-radiation Zernike phase-contrast X-ray nano-CT (nano-CT), andtransmission electron microscopy (TEM) to investigate tattooed skin in a 28-day porcine model and in a human biopsy with anallergic reaction to an unknown red pigment. Micro-CT resolved the 3D distribution of pigment agglomerates within segmentedskin layers and tracked the immune response at days 7, 14, and 28, revealing swelling at day 7 that subsided by day 28. Volumequantification recovered only 6.4 % of the expected TiO2 content, revealing a key limitation of micro-CT. Nano-CT resolved theinternal architecture of these agglomerates at higher resolution, showing individual TiO2 particles remain separated by softtissue rather than merging. TEM complemented both modalities by visualizing single TiO2, copper phthalocyanine ( CuPh), andweakly absorbing red pigment particles undetectable by CT alone. Together, these modalities span length scales from wholebiopsies to single nanoparticles, offering a framework for evaluating tattoo ink safety in dermatology, toxicology, and regulation.",
+      "summary": "",
+      "journal": "",
+      "publication_date": null,
+      "doi": "10.21203/rs.3.rs-10878872/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10878872/v1",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 25.64,
+      "id": "P32",
+      "current_rank": 4,
+      "work_type": ""
+    },
+    {
+      "title": "Physics-Informed Cross-Study Assessment of Sensitivity, Detection Limits, and Scintillation Timing in X-Ray Detectors",
+      "authors": [
+        "Alper Sefa Dönmez",
+        "Muhammed Emin Demlikoglu",
+        "Enes Ince",
+        "Murat Aydemir"
+      ],
+      "abstract": "X-ray detector development is often discussed in terms of individual performance metrics such as effective atomic number, carrier mobility–lifetime product, sensitivity, detection limit, light yield, or scintillation decay time. In practice, however, these quantities are not independent, and their relative importance changes with detector architecture and operating regime. Here, we assembled a curated literature-derived dataset covering direct-conversion X-ray detectors and indirect scintillation-based systems and used a physics-informed cross-study analysis to examine associations among selected material, device, and performance parameters. Direct and indirect detectors occupy clearly different electronic and geometrical regimes, particularly in terms of bandgap and active-layer thickness, despite substantial overlap in absorber-related properties. For direct detectors, sensitivity and detection limit were inversely correlated at the study level (Spearman ρ = −0.842, p = 0.0022), but the performance landscape showed that high sensitivity alone does not guarantee the lowest detectable dose rate. A noise-to-signal descriptor proportional to Jdark/(S A) showed a markedly stronger relationship with the reported detection limit (ρ = 0.964, p = 7.3 × 10−6), consistent with the importance of considering background current and signal generation together, without establishing a particular noise mechanism. In contrast, grouping detectors according to the dimensionless Hecht transport parameter µτV/d2 produced no significant difference in sensitivity between transport regimes, which does not establish a transport-saturation threshold. Study-level descriptor analysis further showed that Zeff remained significantly associated with sensitivity after false discovery rate correction, whereas no individual descriptor retained statistical significance for the detection limit after correction. For scintillators, a higher light yield was accompanied by a longer decay time, while the fraction of total photons available within the first 5 ns decreased with increasing total light output. These associations illustrate the multi-parameter nature of X-ray detector performance: absorption and transport establish the available signal, whereas low-dose direct detection is increasingly governed by noise and device-level effects, and indirect detection is constrained by the competing requirements of brightness, timing, and radiation tolerance.",
+      "summary": "",
+      "journal": "Condensed Matter",
+      "publication_date": "2026-10-25",
+      "doi": "10.3390/condmat11040040",
+      "url": "https://doi.org/10.3390/condmat11040040",
+      "source": "openalex",
+      "topics": [
+        "Detector",
+        "Sensitivity (control systems)",
+        "Scintillation",
+        "Dimensionless quantity",
+        "Limit (mathematics)"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 19.87,
+      "id": "P33",
+      "current_rank": 9,
+      "work_type": "article"
+    },
+    {
+      "title": "Physical and Chemical Reinforcement of Polycrystalline Perovskite Films Enables Robust X‐ray Detectors With Low Detection Limits",
+      "authors": [
+        "Ankang Li",
+        "Xi Qin",
+        "Yingjun Chai",
+        "Xiaoyan Li",
+        "Yucheng Liu",
+        "Yucheng Liu",
+        "Xinwei Guo",
+        "Shengli Zhang",
+        "Yibo Geng",
+        "Haibo Zeng",
+        "Xiaoming Li"
+      ],
+      "abstract": "ABSTRACT Polycrystalline halide perovskite films are highly promising for direct‐conversion X‑ray detection, but their practical application is severely limited by interfacial defects and structural looseness, which cause high leakage current, poor response, severe ion migration, and film fragility. Here, we report a dual‐action strategy that physically and chemically strengthens perovskite films by intercalating a tunneling poly(methyl methacrylate) (PMMA) interfacial layer. The insulating PMMA network fills surface pinholes, drastically increasing overall resistivity, and the detectors exhibit a profoundly suppressed dark current of 458 pA at −1 V and a low limit of detection (LoD) of 3.38 nGy air s −1 . The carbonyl groups in PMMA effectively passivate the uncoordinated Pb 2+ , eliminating non‐radiative recombination and interfacial ion migration, which yields a sensitivity of 1.1 × 10 5 µC Gy air −1 cm −2 at −20 V. Moreover, the polymer mitigates mechanical stress in films and encapsulates them indirectly, enhancing Young's modulus and strain at break while forming a dense barrier against moisture and oxygen. The detectors achieve exceptional operational stability over 15,000 s with negligible current drift, which is also manifested by uniform single‐pixel imaging under low dose rate. This work presents a versatile and effective route to perovskite X‐ray detectors with simultaneously high signal‐to‐noise ratio and long‐term stability.",
+      "summary": "",
+      "journal": "Laser & Photonics Review",
+      "publication_date": "2026-10-31",
+      "doi": "10.1002/lpor.72154",
+      "url": "https://doi.org/10.1002/lpor.72154",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Perovskite (structure)",
+        "Crystallite",
+        "Optoelectronics",
+        "Passivation"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 57.5
+      },
+      "final_score": 17.42,
+      "id": "P34",
+      "current_rank": 13,
+      "work_type": "article"
+    },
+    {
+      "title": "Data and code for: Qualifying a simulation-trained X-ray computed tomography measurement without ground truth: near-resolution void fraction in elastomers",
+      "authors": [
+        "Taoufik Nasri",
+        "Adel Hamdi"
+      ],
+      "abstract": "Data and code supporting the article “Qualifying a simulation-trained X-ray computed tomography measurement without ground truth: near-resolution void fraction in elastomers” (T. Nasri, A. Hamdi). Content: decoded density maps of the 46 archived CT slices of bonded natural rubber and SBR discs; forward model of the scanner and of the archive; training, evaluation and figure scripts (Python); trained networks; tables of results behind every figure and table of the paper. The README.md file gives the script that reproduces each item. Version 3 adds the coverage of the conformal intervals with the measured blur and by class of the estimate, the false-detection rates and the total uncertainty of the real-slice estimates (script p1_rev2.py, files rev2_*.csv, Supplementary Table S2). Since version 2, the region of the notched discs is the core r < 13 mm, centred on the sound core. The original colour maps belong to the archive of the CRITEL project and are available from the authors on reasonable request. Third-party public data used in the paper (clinical scanner MTF, CCR phantom, Expancel microspheres) are not redistributed; their DOIs are given in the README.",
+      "summary": "",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publication_date": "2026-10-25",
+      "doi": "10.5281/zenodo.23497063",
+      "url": "https://doi.org/10.5281/zenodo.23497063",
+      "source": "openalex",
+      "topics": [
+        "Scanner",
+        "Code (set theory)",
+        "Void (composites)",
+        "Scripting language",
+        "Computer science"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 6.92,
+      "id": "P35",
+      "current_rank": 36,
+      "work_type": "dataset"
+    },
+    {
+      "title": "X-Ray Imaging in Entomology",
+      "authors": [
+        "van de Kamp"
+      ],
+      "abstract": "X-ray imaging provides fascinating insights into insect morphology, physiology, behavior, and evolution. In recent years, microcomputed tomography, in particular, has emerged as an indispensable tool for studying insects in three dimensions, ushering in a new digital era for insect morphological research. Thanks to the increasing accessibility of X-ray imaging systems along with innovations such as dose-efficient and high-throughput imaging, the technique is thriving. This review surveys the current landscape of X-ray imaging in entomology, outlining key techniques and analysis workflows and highlighting the diverse ways in which X-ray imaging is used to address fundamental and applied questions in insect science. Furthermore, it discusses emerging trends, such as AI-driven analysis and large-scale digitization, as well as the challenges and opportunities these developments pose for the future of integrative entomology.",
+      "summary": "",
+      "journal": "Annual Review of Entomology",
+      "publication_date": "2026-10-28",
+      "doi": "10.1146/annurev-ento-013026-111522",
+      "url": "https://doi.org/10.1146/annurev-ento-013026-111522",
+      "source": "crossref",
+      "topics": [
+        "X-ray",
+        "imaging"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 47.14,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 18.76,
+      "id": "P36",
+      "current_rank": 11,
+      "work_type": ""
+    },
+    {
+      "title": "Synchrotron Radiation for Cultural Heritage at PETRA: From Micro- and Nanoscale Spectro-Microscopy to 3D Imaging at PETRA III—with a View to PETRA IV",
+      "authors": [
+        "Katrin Zerbe",
+        "Laura Gallardo",
+        "Riccardo Cameli Manzo",
+        "Sylvio Haas",
+        "Jörg U. Hammel"
+      ],
+      "abstract": "People have always been fascinated by the past, and artifacts and cultural heritage provide a way to gain information and insight into times gone by. In this context, the key questions are: What is...",
+      "summary": "",
+      "journal": "Synchrotron Radiation News",
+      "publication_date": "2026-10-22",
+      "doi": "10.1080/08940886.2026.2737599",
+      "url": "https://doi.org/10.1080/08940886.2026.2737599",
+      "source": "openalex",
+      "topics": [
+        "Cultural heritage",
+        "Synchrotron radiation",
+        "Nanoscopic scale",
+        "Optics",
+        "Synchrotron"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 19.81,
+      "id": "P37",
+      "current_rank": 10,
+      "work_type": "article"
+    },
+    {
+      "title": "A low-cost 3D printed resin cell for multimodal X-ray characterization of bio-cementation between two particles",
+      "authors": [
+        "Marilyn Sarkis",
+        "C. Detlefs",
+        "Michela La Bella",
+        "Antoine Naillon",
+        "Christian Geindreau",
+        "Fabrice Emeriault",
+        "Yves Watier",
+        "J. Ball",
+        "Can Yildirim"
+      ],
+      "abstract": "We present the design and operation of a low-cost 3D printed resin flow cell for the study of bio-cementation between two aligned particles in contact. The cell supports multimodal synchrotron X-ray characterization of the same interparticle contact, combining 3D X-ray diffraction modalities including scanning 3D X-ray diffraction, X-ray computed tomography and darkfield X-ray microscopy across multiple beamlines at the European Synchrotron Radiation Facility. Its geometry allows calcite crystals precipitated at the particle contact to be unambiguously distinguished from those nucleated on the cell walls during both indexing and crystal selection. The platform is demonstrated on glass beads and S30 sand grains cemented over successive cycles under varying NaCl concentrations, resolving the morphology and orientation of individual calcite crystals from the grain scale down to the intragranular scale. Practical limitations of the current design are also discussed.",
+      "summary": "",
+      "journal": "Journal of Synchrotron Radiation",
+      "publication_date": "2026-10-20",
+      "doi": "10.1107/s1600577526009914",
+      "url": "https://doi.org/10.1107/s1600577526009914",
+      "source": "openalex",
+      "topics": [
+        "Characterization (materials science)",
+        "Materials science",
+        "Synchrotron radiation",
+        "Synchrotron",
+        "Nanoscopic scale"
+      ],
+      "citation_count": 0,
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 60.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 21.83,
+      "id": "P38",
+      "current_rank": 6,
+      "work_type": "article"
+    }
+  ]
+}
