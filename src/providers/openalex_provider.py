@@ -7,7 +7,7 @@ from typing import Iterable
 import requests
 
 from src.config import get_settings
-from src.models import PaperRecord
+from src.models import PEER_REVIEWED_TYPES, PaperRecord
 from src.providers.base_provider import LiteratureProvider
 
 
@@ -84,6 +84,7 @@ class OpenAlexProvider(LiteratureProvider):
             url = primary.get("landing_page_url") or item.get("id") or ""
             topics_list = [concept.get("display_name", "") for concept in item.get("concepts", [])[:5] if concept.get("display_name")]
             citation_count = item.get("cited_by_count", 0)
+            work_type = item.get("type") or ""
             paper = PaperRecord(
                 title=title,
                 authors=authors,
@@ -95,7 +96,8 @@ class OpenAlexProvider(LiteratureProvider):
                 source=self.name,
                 topics=topics_list,
                 citation_count=citation_count,
-                is_peer_reviewed=True,
+                work_type=work_type,
+                is_peer_reviewed=work_type in PEER_REVIEWED_TYPES,
                 raw=item,
             )
             papers.append(paper)

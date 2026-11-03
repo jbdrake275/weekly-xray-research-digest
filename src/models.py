@@ -4,6 +4,28 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Any
 
+# Work types use each provider's own vocabulary (OpenAlex "article"/"preprint",
+# Crossref "journal-article"/"posted-content"); both checked against the live APIs.
+PEER_REVIEWED_TYPES = {"article", "review", "journal-article", "proceedings-article"}
+# Records that are attachments to a paper rather than a paper in their own right.
+EXCLUDED_WORK_TYPES = {"supplementary-materials", "component"}
+WORK_TYPE_LABELS = {
+    "article": "Journal article",
+    "journal-article": "Journal article",
+    "review": "Review",
+    "proceedings-article": "Conference paper",
+    "conference-abstract": "Conference abstract (not peer reviewed)",
+    "preprint": "Preprint (not peer reviewed)",
+    "posted-content": "Preprint (not peer reviewed)",
+    "dataset": "Dataset",
+}
+
+
+def work_type_label(work_type: str) -> str:
+    if not work_type:
+        return "Unknown"
+    return WORK_TYPE_LABELS.get(work_type, work_type.replace("-", " ").capitalize())
+
 
 @dataclass
 class PaperRecord:
@@ -18,7 +40,8 @@ class PaperRecord:
     source: str = ""
     topics: list[str] = field(default_factory=list)
     citation_count: int = 0
-    is_peer_reviewed: bool = True
+    work_type: str = ""
+    is_peer_reviewed: bool = False
     category: str = "Uncategorized"
     relevance: dict[str, float] = field(default_factory=dict)
     score_components: dict[str, float] = field(default_factory=dict)
@@ -48,6 +71,7 @@ class PaperRecord:
             "source": self.source,
             "topics": self.topics,
             "citation_count": self.citation_count,
+            "work_type": self.work_type,
             "is_peer_reviewed": self.is_peer_reviewed,
             "category": self.category,
             "relevance": self.relevance,

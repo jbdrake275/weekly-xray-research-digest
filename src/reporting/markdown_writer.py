@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import date
 
-from src.models import PaperRecord
+from src.models import PaperRecord, work_type_label
 
 # Every line of the report is derived from the paper metadata or the scores; nothing
 # here asserts significance or relevance that the data does not support.
@@ -35,6 +35,7 @@ class MarkdownWriter:
             "",
             f"**Link:** {link}  ",
             f"**Published:** {published}  ",
+            f"**Type:** {work_type_label(paper.work_type)}  ",
             f"**Found via:** {paper.source or 'unknown'}  ",
             f"**Citations so far:** {paper.citation_count}",
             "",

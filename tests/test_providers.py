@@ -62,6 +62,38 @@ def test_openalex_parses_works_and_strips_doi_prefix(fake_get):
     assert paper.abstract == "Tomography of foams and of gels."
 
 
+def test_crossref_preprint_authors_type_and_posted_date(fake_get):
+    payload = {
+        "message": {
+            "items": [
+                {
+                    "DOI": "10.3/pre",
+                    "title": ["A preprint"],
+                    "type": "posted-content",
+                    "posted": {"date-parts": [[2026, 10, 28]]},
+                    "author": [{"given": "Marie", "family": "Curie"}, {"family": "Röntgen"}, {"name": "Science and Technology Facilities Council"}],
+                }
+            ]
+        }
+    }
+    calls = fake_get(crossref_provider, payload)
+    paper = crossref_provider.CrossrefProvider().search(["x"])[0]
+    assert "type" in calls["params"]["select"] and "posted" in calls["params"]["select"]
+    assert paper.authors == ["Marie Curie", "Röntgen", "Science and Technology Facilities Council"]
+    assert paper.publication_date == date(2026, 10, 28)
+    assert paper.work_type == "posted-content"
+    assert paper.is_peer_reviewed is False
+
+
+def test_openalex_work_type_sets_peer_review(fake_get):
+    def work(doi, work_type):
+        return {"doi": f"https://doi.org/{doi}", "title": doi, "type": work_type}
+
+    fake_get(openalex_provider, {"results": [work("10.1/a", "article"), work("10.1/p", "preprint"), work("10.1/d", "dataset")]})
+    papers = openalex_provider.OpenAlexProvider().search(["x"])
+    assert [(p.work_type, p.is_peer_reviewed) for p in papers] == [("article", True), ("preprint", False), ("dataset", False)]
+
+
 def test_clean_jats_strips_markup():
     raw = "<jats:title>Abstract</jats:title>\n  <jats:p>Phase  contrast &amp; <jats:italic>in situ</jats:italic> CT.</jats:p>"
     assert crossref_provider.clean_jats(raw) == "Phase contrast & in situ CT."

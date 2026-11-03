@@ -44,7 +44,9 @@ def test_report_keeps_abstract_and_has_no_boilerplate(make_paper):
 
 def test_report_labels_ai_summary_and_missing_abstract(make_paper):
     paper = make_paper(title="Optics paper", abstract="")
+    paper.work_type = "posted-content"
     report = ReportGenerator(summarizer=StubSummarizer()).generate([paper])
+    assert "**Type:** Preprint (not peer reviewed)" in report
     assert "**Summary (AI-generated, verify against the paper):** Stub summary of Optics paper" in report
     assert "No abstract available from test." in report
     assert paper.abstract == ""

@@ -8,7 +8,7 @@ from typing import Iterable
 import requests
 
 from src.config import get_settings
-from src.models import PaperRecord
+from src.models import PEER_REVIEWED_TYPES, PaperRecord
 from src.providers.base_provider import LiteratureProvider
 
 
@@ -18,6 +18,12 @@ def clean_jats(abstract: str) -> str:
     text = re.sub(r"<(jats:)?title>\s*Abstract\s*</(jats:)?title>", " ", abstract, flags=re.IGNORECASE)
     text = html.unescape(re.sub(r"<[^>]+>", " ", text))
     return " ".join(text.split())
+
+
+def author_name(author: dict) -> str:
+    # People have given/family; organisations (e.g. a facility as author) have only "name".
+    person = " ".join(part for part in (author.get("given"), author.get("family")) if part)
+    return person or author.get("name", "")
 
 
 class CrossrefProvider(LiteratureProvider):
@@ -39,7 +45,10 @@ class CrossrefProvider(LiteratureProvider):
             headers["User-Agent"] = f"weekly-xray-research-digest/{self.email}"
         url = "https://api.crossref.org/works"
         params = {
-            "select": "DOI,title,author,abstract,published-print,published-online,container-title,URL,score,is-referenced-by-count",
+            "select": (
+                "DOI,title,author,abstract,type,published-print,published-online,posted,published,"
+                "container-title,URL,score,is-referenced-by-count"
+            ),
             "query.title": query,
             "rows": min(limit, 50),
         }
@@ -61,9 +70,13 @@ class CrossrefProvider(LiteratureProvider):
             if not doi:
                 continue
             title = item.get("title", ["Untitled"])[0] if item.get("title") else "Untitled"
-            authors = [author.get("family", "") for author in item.get("author", []) if author.get("family")]
+            authors = [name for name in (author_name(author) for author in item.get("author", [])) if name]
             abstract = clean_jats(item.get("abstract") or "")
-            published = item.get("published-print") or item.get("published-online") or {}
+            # Preprints (posted-content) carry only "posted"; "published" is Crossref's
+            # earliest-of-all-dates fallback.
+            published = (
+                item.get("published-print") or item.get("published-online") or item.get("posted") or item.get("published") or {}
+            )
             date_value = None
             if published:
                 # Crossref date-parts holds [year], [year, month] or [year, month, day];
@@ -78,6 +91,7 @@ class CrossrefProvider(LiteratureProvider):
             journal = ", ".join(item.get("container-title", []))
             url = item.get("URL", "")
             citation_count = item.get("is-referenced-by-count", 0)
+            work_type = item.get("type") or ""
             paper = PaperRecord(
                 title=title,
                 authors=authors,
@@ -89,7 +103,8 @@ class CrossrefProvider(LiteratureProvider):
                 source=self.name,
                 topics=["X-ray", "imaging"],
                 citation_count=citation_count,
-                is_peer_reviewed=True,
+                work_type=work_type,
+                is_peer_reviewed=work_type in PEER_REVIEWED_TYPES,
                 raw=item,
             )
             papers.append(paper)

@@ -8,7 +8,7 @@ import requests
 
 from src.config import get_settings
 from src.logging_config import configure_logging, ensure_directory
-from src.models import PaperRecord
+from src.models import EXCLUDED_WORK_TYPES, PaperRecord
 from src.providers.base_provider import LiteratureProvider
 from src.providers.crossref_provider import CrossrefProvider
 from src.providers.openalex_provider import OpenAlexProvider
@@ -90,6 +90,7 @@ def main(argv: list[str] | None = None, providers: list[LiteratureProvider] | No
     since = until - timedelta(days=args.days)
     logger.info("Searching publications from %s to %s", since, until)
     papers = dedupe_by_doi(collect_papers(providers, topics, args.limit, since, until, logger))
+    papers = [paper for paper in papers if paper.work_type not in EXCLUDED_WORK_TYPES]
     history = HistoryManager(ensure_directory(args.data_dir) / "history.json")
     new_papers = DuplicateChecker(history).filter_new(papers)
     logger.info("%d unique papers, %d not in history", len(papers), len(new_papers))

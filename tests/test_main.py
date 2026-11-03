@@ -55,6 +55,16 @@ def test_publish_records_history_dedupes_and_tolerates_failed_provider(tmp_path,
     assert list((tmp_path / "data").glob("selected-*.csv"))
 
 
+def test_supplementary_records_dropped_but_datasets_kept(tmp_path, make_paper):
+    supplement = make_paper(title="Supplementary material", doi="10.1/s", year=2001)
+    supplement.work_type = "supplementary-materials"
+    dataset = make_paper(title="Data and code for: CT", doi="10.1/d", year=2002)
+    dataset.work_type = "dataset"
+    assert run(tmp_path, [StaticProvider("one", [supplement, dataset])], "--publish-report") == 0
+    history = json.loads((tmp_path / "data" / "history.json").read_text(encoding="utf-8"))
+    assert [entry["doi"] for entry in history["papers"]] == ["10.1/d"]
+
+
 def test_top_n_limits_selection(tmp_path, make_paper):
     papers = [make_paper(title=f"Paper {i}", doi=f"10.1/{i}", year=2000 + i) for i in range(6)]
     assert run(tmp_path, [StaticProvider("one", papers)], "--top-n", "2", "--publish-report") == 0
