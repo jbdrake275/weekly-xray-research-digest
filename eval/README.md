@@ -71,3 +71,25 @@ the set was still built and frozen before any week-2 label existed.
 "no better", not close variants from one another. M0's week-2 order comes from the scorer at build
 time, which no longer gives Crossref papers invented topics (commit 5ee3cb8), so M0 differs slightly
 from week 1. Labels only judge papers the search returned; recall of the search is a separate question.
+
+## Week 2 (2026-11-09): hold-out result
+
+34 candidates, window 2026-11-04 to 2026-11-09; must 15, maybe 8, skip 11; 6 without abstract,
+of which 1 is a must-read (P23). M1 and M4 trained on week-1 labels only.
+`python -m eval.evaluate --train 2026-11-03 --test 2026-11-09`
+
+| Method | P@4 | P@10 | skip@10 | NDCG | must pct (abstract) | must pct (no abstract) |
+|---|---|---|---|---|---|---|
+| M0 current keyword scorer | 0.75 | 0.60 | 1 | 0.932 | 0.294 | 0.970 |
+| M1 MiniLM centroid | 1.00 | 0.80 | 1 | 0.965 | 0.245 | 0.848 |
+| M2 MiniLM scope text | 0.50 | 0.70 | 2 | 0.879 | 0.390 | 0.212 |
+| M3 SPECTER scope text | 0.75 | 0.60 | 2 | 0.922 | 0.353 | 0.667 |
+| M4 MiniLM centroid + scope | 1.00 | 0.80 | 1 | 0.954 | 0.266 | 0.545 |
+| random order (mean) | 0.44 | 0.44 | 3.2 | 0.798 | 0.499 | 0.499 |
+
+**Decision, by the rule as written.** Candidate: M1 (highest NDCG among M1 to M4).
+Condition 1 passes (NDCG 0.965 > 0.932, skip@10 1 = 1). Condition 2 is **undetermined**: only 1
+no-abstract must-read, fewer than the required 3. Undetermined is not passed, so **M0 stays**.
+
+Not evidence for any decision (n = 1), but noted: M0 and M1 both put the one no-abstract
+must-read near the bottom of the list (percentiles 0.97 and 0.85); only M2 did not (0.21).
