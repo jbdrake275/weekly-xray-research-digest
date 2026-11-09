@@ -1,0 +1,36 @@
+{
+  "papers": [
+    {
+      "title": "Design, construction and application of a grating-based X-ray phase contrast imaging system under laboratory conditions",
+      "doi": "10.1177/08953996261451154",
+      "publication_date": "2026-11-04",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 37.89
+    },
+    {
+      "title": "Virtual X-ray Tomography as a Digital Twin for NDT and Synchrotron Imaging",
+      "doi": "10.58286/35084",
+      "publication_date": "2026-11-01",
+      "category": "Uncategorized",
+      "source": "crossref",
+      "final_score": 35.48
+    },
+    {
+      "title": "X-Ray Computed Tomography and Laminography Measurements of a 3D-Stacked IC",
+      "doi": "10.4071/001c.173628",
+      "publication_date": "2026-11-05",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 27.87
+    },
+    {
+      "title": "Watching Chemistry Across Ages via Synchrotron Radiation\nX-ray Microimaging Techniques",
+      "doi": "10.1021/acs.accounts.6c00520",
+      "publication_date": "2026-11-04",
+      "category": "Uncategorized",
+      "source": "crossref",
+      "final_score": 27.66
+    }
+  ]
+}
