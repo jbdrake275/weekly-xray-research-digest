@@ -16,8 +16,9 @@ It is not in `requirements.txt` because the weekly workflow does not use it.
 
 ```powershell
 conda activate xray-digest
-python -m eval.build_label_set --since 2026-11-04 --until 2026-11-10 --exclude eval/candidates-2026-11-03.json
-python -m eval.evaluate --train 2026-11-03 --test 2026-11-10
+# week 3 (see the pre-registration below):
+python -m eval.build_label_set --since 2026-11-10 --until <build date> --exclude eval/candidates-2026-11-03.json --exclude eval/candidates-2026-11-09.json
+python -m eval.evaluate --train 2026-11-03 2026-11-09 --test <build date>
 ```
 
 ## Week 1 (2026-11-03): exploratory
@@ -93,3 +94,41 @@ no-abstract must-read, fewer than the required 3. Undetermined is not passed, so
 
 Not evidence for any decision (n = 1), but noted: M0 and M1 both put the one no-abstract
 must-read near the bottom of the list (percentiles 0.97 and 0.85); only M2 did not (0.21).
+
+## Week 3: pre-registered hold-out test (fixed 2026-11-09, before week-3 data exists)
+
+**Why the change.** Week 2 could not decide on abstract neutrality. Both the keyword scorer and
+the embedding methods probably favour papers with more text: fewer words give fewer keyword
+hits, and a title-only embedding sits away from a centroid built from title-plus-abstract text.
+The labeller's view (2026-11-09): an abstract is a nice-to-have, and a title usually says
+what a paper is about. So the rule now asks that a new method be no less fair than the
+current scorer, rather than meeting an absolute bar, and M5 tests ranking on titles alone.
+This was decided after seeing week-2 results, under which M1 would pass the new form of the check;
+that is why week 3 is scored on fresh data only and week 2 is never pooled into the test.
+
+**Data.** Built with `build_label_set.py` on or after 2026-11-16, window from 2026-11-10 to the
+build date, excluding week-1 and week-2 DOIs. Labelled blind before `evaluate.py` is run on it.
+
+**Methods.** M0 to M4 unchanged (same code and `SCOPE` text as week 2). New: M5, the MiniLM
+centroid with every paper (training and test) embedded from its title only. M1, M4 and M5 learn
+from week-1 and week-2 labels. No edits to methods after week-3 labels exist.
+
+**Metrics.** As week 2, plus the *neutral gap*: for each must-read or maybe without an abstract,
+its rank percentile minus the mean percentile of papers with an abstract and the same label;
+the gap is the mean of these (positive = pushed down). `evaluate.py` prints it.
+
+**Decision rule.** Among M1 to M5, the candidate is the method with the highest NDCG on week 3. Adopt it only if:
+
+1. its NDCG beats M0's and its skip@10 is no worse than M0's (week 3 only);
+2. its neutral gap is no larger than M0's. The check needs at least 3 no-abstract must-read or
+   maybe papers. If week 3 has fewer, build and label week 4 the same way and pool the per-paper
+   deviations of weeks 3 and 4 (`--test <week 3> <week 4>`); condition 1 still uses week 3 alone.
+   If the pool still has fewer than 3, the check is undetermined, not passed.
+
+Ties (within 0.01 NDCG) prefer fewer requirements: scope text over centroid, MiniLM over SPECTER,
+and M5 over M1 (titles are always present). If no method passes, keep M0 and revisit.
+
+**Exploratory, week-2 data (seen while writing this; not evidence).** On week 2, M5 scored NDCG
+0.935 and neutral gap 0.191, against M0 0.932 / 0.468 and M1 0.965 / 0.154 (n = 3). Ranking on
+titles alone did not remove the gap there, which hints that papers without abstracts may also
+have less descriptive titles (for example, conference records). Week 3 tests this properly.
