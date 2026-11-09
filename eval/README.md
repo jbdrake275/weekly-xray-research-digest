@@ -61,6 +61,12 @@ without an abstract are pushed down).
 If two methods are within 0.01 NDCG, prefer the one with fewer requirements: scope text (needs no
 labels) over centroid, and MiniLM (about 90 MB) over SPECTER. If no method passes, keep M0 and revisit.
 
+**Deviation (recorded 2026-11-09, before labelling).** The labeller chose to build the set on
+2026-11-09, one day before the pre-registered earliest date, so the window is 2026-11-04 to
+2026-11-09 (files `*-2026-11-09`). Nothing else changed: same methods, scope text, metrics and rule.
+The build gave 34 candidates, 6 without an abstract. The cost is a slightly smaller window;
+the set was still built and frozen before any week-2 label existed.
+
 **Known limits.** One hold-out week of about 40 papers can separate "clearly better than M0" from
 "no better", not close variants from one another. M0's week-2 order comes from the scorer at build
 time, which no longer gives Crossref papers invented topics (commit 5ee3cb8), so M0 differs slightly
