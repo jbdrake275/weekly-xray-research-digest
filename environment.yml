@@ -1,0 +1,12 @@
+# Requested packages (conda env export --from-history, 2026-11-10). Recreate: conda env create -f environment.yml (local eval env; CI uses requirements.txt)
+name: xray-digest
+channels:
+  - conda-forge
+dependencies:
+  - requests[version='>=2.31.0']
+  - pydantic[version='>=2.8.2']
+  - python-dotenv[version='>=1.0.1']
+  - pytest[version='>=8.2.0']
+  - pytest-cov[version='>=5.0.0']
+  - python=3.12
+  - sentence-transformers
