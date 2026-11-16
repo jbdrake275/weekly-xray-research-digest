@@ -31,6 +31,38 @@
       "category": "Uncategorized",
       "source": "crossref",
       "final_score": 27.66
+    },
+    {
+      "title": "Phase and intensity x-ray linearization with dark field: a fast algorithm for low coherence X-ray phase-contrast and dark field imaging compatible with medical and industrial X-ray sources",
+      "doi": "10.1364/ol.610987",
+      "publication_date": "2026-11-15",
+      "category": "Uncategorized",
+      "source": "crossref",
+      "final_score": 38.45
+    },
+    {
+      "title": "Multidirectional x-ray phase-contrast imaging with 1D modulators",
+      "doi": "10.1063/5.0354473",
+      "publication_date": "2026-11-09",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 22.29
+    },
+    {
+      "title": "Comparative study of dual-energy X\u2011ray absorptiometry versus multislice computed tomography for vertebral height measurement",
+      "doi": "10.1093/bjr/tqag265",
+      "publication_date": "2026-11-02",
+      "category": "Uncategorized",
+      "source": "crossref",
+      "final_score": 21.87
+    },
+    {
+      "title": "Cram\u00e9r\u2013Rao lower bound for spectral propagation-based x-ray phase-contrast imaging",
+      "doi": "10.1088/1361-6560/aebd38",
+      "publication_date": "2026-11-03",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 21.06
     }
   ]
 }
