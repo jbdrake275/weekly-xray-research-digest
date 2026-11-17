@@ -1,0 +1,1372 @@
+{
+  "created": "2026-11-16",
+  "window": [
+    "2026-11-10",
+    "2026-11-16"
+  ],
+  "topics": [
+    "X-ray computed tomography",
+    "synchrotron radiation",
+    "X-ray detector",
+    "X-ray phase contrast imaging",
+    "X-ray nondestructive evaluation"
+  ],
+  "limit_per_provider": 20,
+  "excluded_snapshots": [
+    "eval\\candidates-2026-11-03.json",
+    "eval\\candidates-2026-11-09.json"
+  ],
+  "papers": [
+    {
+      "title": "Single-Projection Three-Dimensional X-ray Imaging through Time- and Energy-Resolved Photon Scattering",
+      "authors": [
+        "Shusen Jing",
+        "Qihui Lyu",
+        "Qifan Xu",
+        "Seungeun Lee",
+        "Woon-Seng Choong",
+        "Joshua Cates",
+        "Ke Sheng"
+      ],
+      "abstract": "Scattered X-ray photons contain information about material composition but are generally treated as contamination in conventional computed tomography (CT). We investigate a theoretical time- and energy-encoded CT framework that uses photon arrival time, position, and energy to localize scattering events and reconstruct three-dimensional Rayleigh and Compton scattering distributions from a single projection without mechanical rotation. The framework was evaluated using Geant4 Monte Carlo simulations of heterogeneous tissue, head-and-neck, and high-resolution pattern phantoms. Under idealized source and detector conditions, the reconstructed scattering distributions differentiated soft tissues and reproduced simulated structures, including features as small as 0.1 mm. Quantitative errors of approximately 1–7% and a simulated dose of 50 µGy were reported for the investigated configurations. These results establish the information-reconstruction potential of time- and energy-resolved scatter measurements, rather than the performance of a realizable clinical scanner. Implementation will require ultrashort X-ray pulses, precise photon timing and energy measurements, and adequate detector coverage. The approach provides a theoretical basis for investigating single-projection volumetric X-ray scatter imaging and material characterization.",
+      "summary": "",
+      "journal": "",
+      "publication_date": "2026-11-12",
+      "doi": "10.21203/rs.3.rs-11447801/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11447801/v1",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "posted-content",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 65.0,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 25.92,
+      "current_rank": 2,
+      "id": "P01"
+    },
+    {
+      "title": "Physics-Based Modeling and Validation of a Commercial Graphite-Lithium Manganese Iron Phosphate Cylindrical Cell Based on Teardown Derived Parameters",
+      "authors": [
+        "Palash Ravindranath Gaikwad",
+        "Tapio Juntunen",
+        "Masood Tamadondar",
+        "Johan Scheers",
+        "Yicun Huang",
+        "Daniel Brandell"
+      ],
+      "abstract": "Abstract Lithium manganese iron phosphate (LMFP) is an attractive cathode candidate for lithium-ion batteries in electric vehicles, but physics-based simulations demand cell-specific parameter sets, which are still largely unavailable for commercial LMFP cells. In this study, we disassemble a commercial cylindrical graphite–LMFP cell and establish a self-consistent parameter set for Doyle–Fuller–Newman (DFN) modeling. We determine cell geometry, composition, stoichiometry, and electrochemical properties using X-ray computed tomography, pseudo-open-circuit voltage measurements, the galvanostatic intermittent titration technique (GITT), and electrochemical impedance spectroscopy (EIS). The resulting DFN model is assessed through OCV reconstruction, reference performance tests, GITT pulse–rest experiments, multi-rate CCCV charging protocols, and full-cell EIS. The calibrated model reconstructs the full-cell OCV with 3–5 mV RMSE, reproduces the complete continuous 1C pulse–rest discharge sequence with an RMSE of 41.60 mV, and captures CCCV charging from C/5 to 1.5C with overlap voltage RMSEs of 32.52–38.80 mV. It also recovers the low-frequency impedance response using a single, consistently constrained parameter set. This work delivers a reproducible parameterization methodology and a practical DFN reference model for graphite–LMFP cells.",
+      "summary": "",
+      "journal": "Journal of The Electrochemical Society",
+      "publication_date": "2026-11-10",
+      "doi": "10.1149/1945-7111/aec04a",
+      "url": "https://doi.org/10.1149/1945-7111/aec04a",
+      "source": "openalex",
+      "topics": [
+        "Lithium iron phosphate",
+        "Dielectric spectroscopy",
+        "Cathode",
+        "Manganese",
+        "Electrical impedance"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 47.14,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 23.76,
+      "current_rank": 3,
+      "id": "P02"
+    },
+    {
+      "title": "BALLISTIC PERFORMANCE AND DAMAGE EVOLUTION OF TWARON CT 737 PARA-ARAMID COMPOSITE PANELS UNDER 9 × 19 MM FMJ LOADING",
+      "authors": [
+        "Jindřich Viliš",
+        "Zdeněk Pokorný",
+        "Jan Zouhar",
+        "Roman Vítek",
+        "Kamil Podaný",
+        "MARTIN DOSTAL",
+        "MARTIN KLIMES"
+      ],
+      "abstract": "This study examines the mechanical behaviour and ballistic performance of Twaron CT 737 para-aramid/epoxy laminates manufactured by vacuum-assisted resin transfer moulding, with particular emphasis on damage development across different structural scales. Tensile, three-point flexural, and Shore D hardness tests were complemented by ballistic experiments using 9 × 19 mm full metal jacket (FMJ) ammunition. The composite achieved a mean tensile strength of 583.1 MPa, a flexural strength of 223.4 MPa, and a Shore D hardness of 87.9. A 24-layer panel with a nominal thickness of 14.2 mm prevented complete perforation during three consecutive impacts at a mean velocity of 399.3 m/s and a mean kinetic energy of 637.7 J. Scanning electron microscopy identified yarn pull-out, fibre fracture, fibrillation, and localized fibre–matrix separation, whereas X-ray computed tomography revealed internal deformation and interlaminar delamination extending through several reinforcement layers. These observations indicate that projectile arrest was accompanied by interacting fibre-scale and interlaminar damage processes within the woven architecture. The findings provide an experimental basis for understanding the ballistic response of multilayer para-aramid/epoxy composites under the investigated loading conditions.",
+      "summary": "",
+      "journal": "MM Science Journal",
+      "publication_date": "2026-11-10",
+      "doi": "10.17973/mmsj.2026_11_2026097",
+      "url": "https://doi.org/10.17973/mmsj.2026_11_2026097",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Composite material",
+        "Projectile",
+        "Perforation",
+        "Composite number"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 11.98,
+      "current_rank": 20,
+      "id": "P03"
+    },
+    {
+      "title": "Defect Formation, Detection, and Quality Assurance in Additive Manufacturing: A Systematic Review",
+      "authors": [
+        "André F. V. Pedroso",
+        "André H. M. Rodrigues",
+        "José P. C. Gonçalves",
+        "Marta L. S. Barbosa",
+        "Rúben D. F. S. Costa",
+        "Naiara P. V. Sebbe",
+        "Arnaldo G. Pinto",
+        "Isabel Mendes Pinto"
+      ],
+      "abstract": "Additive manufacturing (AM) enables the production of geometrically complex components but introduces process-dependent defects that may compromise dimensional accuracy, surface integrity and mechanical reliability. This systematic review examines defect formation, defect-sensitive quality phenomena, detection and quality assurance across the principal AM process categories, distinguishing discrete manufacturing discontinuities from geometrical deviations, surface-quality attributes and process-dependent material responses. Literature published between 2010 and 2025 was retrieved through CrossRef and screened using a Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)-informed procedure, resulting in 134 publications included in the final analytical corpus. The synthesis shows that defect formation is governed by interacting material, process and thermal-history variables and that apparently similar defect manifestations can arise from substantially different mechanisms across AM processes. Inspection capability is likewise process- and defect-dependent: X-ray computed tomography (XCT), including micro-computed tomography (µCT), is particularly suited to internal volumetric discontinuities, whereas optical and three-dimensional scanning primarily address external geometry and surface conformity. The principal contribution of the review is an integrated process–material response–quality manifestation–performance–inspection–qualification framework that connects process-dependent defect and quality formation with engineering consequences, inspection capability, quality-assurance decision-making and industrial qualification.",
+      "summary": "",
+      "journal": "Journal of Mechanical Engineering and Manufacturing",
+      "publication_date": "2026-11-10",
+      "doi": "10.53941/jmem.2026.100041",
+      "url": "https://doi.org/10.53941/jmem.2026.100041",
+      "source": "openalex",
+      "topics": [
+        "Quality assurance",
+        "Process (computing)",
+        "Computer science",
+        "Principal (computer security)",
+        "Quality (philosophy)"
+      ],
+      "citation_count": 0,
+      "work_type": "review",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 76.67
+      },
+      "final_score": 12.67,
+      "current_rank": 18,
+      "id": "P04"
+    },
+    {
+      "title": "Optical contrast from speckle patterns with focused modern synchrotron radiation beams",
+      "authors": [
+        "Federico Zontone",
+        "Yuriy Chushkin",
+        "Marco Cammarata",
+        "Mark Sutton"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Optics Express",
+      "publication_date": "2026-11-11",
+      "doi": "10.1364/oe.612522",
+      "url": "https://doi.org/10.1364/oe.612522",
+      "source": "openalex",
+      "topics": [
+        "Optics",
+        "Speckle pattern",
+        "Synchrotron radiation",
+        "Physics",
+        "Materials science"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 18.58,
+      "current_rank": 11,
+      "id": "P05"
+    },
+    {
+      "title": "Meso-Scale Freeze–Thaw Damage Characteristics of Low-Dose SBS Modified Asphalt Stabilized Macadam",
+      "authors": [
+        "Zhenguo Zhao",
+        "尚云飞",
+        "Yongnan He",
+        "Lianxia Ma",
+        "Bo Liu"
+      ],
+      "abstract": "To elucidate the freeze–thaw damage mechanism of asphalt-stabilized macadam from a mesoscopic perspective and to quantify the deterioration of internal parameters, this study examines the effect of adding 2% SBS to cold-region ATB-25. Specimens subjected to 0 to 25 freeze–thaw cycles were scanned using X-ray computed tomography (CT), and image-based morphometric analysis was conducted to track the evolution of key meso-scale indices, including porosity, void number, equivalent void diameter, and void fractal dimension. The results show that the porosity increase in modified ATB-25 (3.06% to 3.71%, approximately 21%) is markedly lower than that in conventional ATB-25 (3.31% to 4.31%, approximately 30%). Similarly, the increase in void number for the modified mixture (2,898 to 4,452, approximately 54%) is smaller than that for the conventional mixture (3,364 to 5,813, approximately 73%). The equivalent void diameter initially decreases and subsequently increases, whereas the void fractal dimension initially increases and then decreases, indicating early closure of small defects followed by void coalescence under cumulative freeze–thaw loading. These CT-based results demonstrate that incorporation of 2% SBS effectively restrains void growth and suppresses the formation of new voids, likely due to enhanced binder elasticity, improved aggregate–mastic bonding, and reduced moisture susceptibility. Consequently, the SBS-modified ATB-25 exhibits superior resistance to freeze–thaw damage. This study provides quantitative mesostructural evidence supporting the use of SBS-modified asphalt-stabilized macadam in cold regions and informs the optimization of mixture design to improve durability under cyclic freezing and thawing.",
+      "summary": "",
+      "journal": "SAE technical papers on CD-ROM/SAE technical paper series",
+      "publication_date": "2026-11-13",
+      "doi": "10.4271/2026-99-2104",
+      "url": "https://doi.org/10.4271/2026-99-2104",
+      "source": "openalex",
+      "topics": [
+        "Void (composites)",
+        "Materials science",
+        "Coalescence (physics)",
+        "Porosity",
+        "Composite material"
+      ],
+      "citation_count": 0,
+      "work_type": "conference-paper",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 57.5
+      },
+      "final_score": 13.89,
+      "current_rank": 16,
+      "id": "P06"
+    },
+    {
+      "title": "Experimental data for CMT arc additively manufactured ER4043 aluminum alloy struts",
+      "authors": [
+        "Liyi Jiang",
+        "Yuchen Zhang"
+      ],
+      "abstract": "Description This dataset supports the manuscript Microstructure and Mechanical Properties of ER4043 Aluminum Alloy Struts Fabricated by CMT Arc Additive Manufacturing. The study examined how wire feed speed (WFS) and strut inclination angle (IA, measured relative to the substrate) affect porosity, microstructure, and tensile properties. Bulk porosity was measured using the Archimedes method at wire feed speeds of 1.6, 3.6, and 5.6 m/min and inclination angles from 40° to 90° in 10° increments. Tensile tests were conducted at 40°, 60°, and 80° for each wire feed speed. The dataset is organized into six folders. - 01_Porosity — Bulk porosity measurements and the associated Origin project. - 02_Tensile — Tensile instrument exports, a results summary, and an Origin project for tensile strength and elongation. - 03_XCT — X-ray computed tomography (XCT) image exports with regions of interest or scale bars, and pore measurement tables for selected upper and lower strut regions. - 04_Optical_microscopy — Optical micrographs of selected strut sections at 200× and 500×. For example, WFS1.6-IA40-upper-200x.tif identifies an image of the upper section of a strut deposited at 1.6 m/min and 40°, acquired at 200× magnification. - 05_Microstructure_SEM — Scanning electron microscopy (SEM) images of the upper, middle, and lower sections of struts deposited at 80° at all three wire feed speeds. - 06_Fractography — SEM images of tensile fracture surfaces and energy-dispersive X-ray spectroscopy (EDS) data for selected fracture surfaces.",
+      "summary": "",
+      "journal": "Mendeley Data",
+      "publication_date": "2026-11-12",
+      "doi": "10.17632/8bjsfjxx87",
+      "url": "https://doi.org/10.17632/8bjsfjxx87",
+      "source": "openalex",
+      "topics": [
+        "Ultimate tensile strength",
+        "Materials science",
+        "Microstructure",
+        "Scanning electron microscope",
+        "Alloy"
+      ],
+      "citation_count": 0,
+      "work_type": "dataset",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 19.98,
+      "current_rank": 10,
+      "id": "P07"
+    },
+    {
+      "title": "Rapid Low‐Temperature In‐Situ Liquid Epitaxy Toward Oriented Perovskite Heterojunctions for High‐Performance X‐Ray Detection",
+      "authors": [
+        "Zhihao Guo",
+        "Xiaochen Wu",
+        "Ruoyu Peng",
+        "Zhiyuan Xu",
+        "Saif M. H. Qaid",
+        "Shuangyi Zhao",
+        "Zhigang Zang"
+      ],
+      "abstract": "ABSTRACT Severe ion migration in conventional metal halide perovskites (MHPs) induces dark current drift and photocurrent degradation, severely restricting their commercialization in X‐ray detection. Herein, we propose a low‐temperature and rapid in‐situ liquid‐epitaxial strategy to grow highly crystalline MAPbI 3 /MAPbBr 3 /MAPbI 3 sandwich heterojunctions, where precursors dissolved in 2‐methoxyethanol (2‐Me) favor fast mass transfer. Achieved MAPbI 3 /MAPbBr 3 /MAPbI 3 heterojunctions with a type‐I band alignment facilitate efficient carrier separation and transport, as well as suppression of traps. By changing epitaxial growth time, MAPbI 3 layers with variable thicknesses are uniformly deposited on bulk MAPbBr 3 , enabling an optimal trade‐off between X‐ray absorption and carrier transport. Benefiting from high bulk resistivity and minimized trap density, the heterojunction X‐ray detectors achieve a high sensitivity of 38301 µC Gy −1 cm −2 and a low limit of detection of 390 nGy s −1 , markedly superior to intrinsic MHP counterparts. More importantly, the built‐in interfacial electric field significantly mitigates halide ion migration, endowing the device with exceptional long‐term operational stability and high‐resolution X‐ray imaging capability. This work provides a feasible preparation of high‐quality MHP heterojunction for the development of high‐performance and stable X‐ray detectors.",
+      "summary": "",
+      "journal": "Laser & Photonics Review",
+      "publication_date": "2026-11-11",
+      "doi": "10.1002/lpor.72217",
+      "url": "https://doi.org/10.1002/lpor.72217",
+      "source": "openalex",
+      "topics": [
+        "Heterojunction",
+        "Materials science",
+        "Photocurrent",
+        "Perovskite (structure)",
+        "Optoelectronics"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 16.73,
+      "current_rank": 13,
+      "id": "P08"
+    },
+    {
+      "title": "X-ray computed tomography data of Bennu particle OREX-800123-113",
+      "authors": [
+        "Takuya Ishizaki"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Astromaterials Data Archive",
+      "publication_date": "2026-11-11",
+      "doi": "10.60707/4q68-ag56",
+      "url": "https://doi.org/10.60707/4q68-ag56",
+      "source": "openalex",
+      "topics": [
+        "Computed tomography",
+        "Particle (ecology)",
+        "Physics",
+        "Materials science",
+        "Tomography"
+      ],
+      "citation_count": 0,
+      "work_type": "dataset",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 6.92,
+      "current_rank": 28,
+      "id": "P09"
+    },
+    {
+      "title": "Segmentation-Free Estimation of Fibre, Matrix and Void Fractions from Simulated X-ray CT of Fibre Composites with a 3D Residual Network",
+      "authors": [
+        "Abhinav Swaran Singh",
+        "Mayank Goswami"
+      ],
+      "abstract": "Abstract Fibre volume fraction and void content govern the stiffness and interlaminar strength of fibre-reinforced polymers, but measuring them from X-ray computed tomography (CT) normally requires voxel-wise segmentation, which is fragile when carbon fibre and epoxy differ little in attenuation and when fibres are only a few voxels across. We instead regress the three volume fractions of a CT sub-volume directly using a 3D residual network (3.6 million parameters, with a softmax output ensuring that the fractions sum to one). Training and test data are simulated: 66 synthetic composites with fibre contents ranging from 40% to 66% and void contents ranging from 0% to 5% are generated on a supersampled grid, ensuring that every crop has exact ground truth. The composites are scanned using a physics-based CT simulator incorporating parallel-beam projection, Poisson noise at three dose levels, detector blur, and filtered back-projection. On 216 test crops from 9 held-out composites, the network achieves a mean absolute error (MAE) of 0.84 percentage points (pp) [95% confidence interval: 0.66–1.05] for fibre and 0.17 pp [0.11–0.25] for void, compared with 6.06 pp and 0.28 pp, respectively, for the best threshold- or histogram-based methods. The network is more accurate on all 9 test composites for fibre and matrix (Wilcoxon p = 0.0039, the minimum attainable value for n = 9). Its fibre error increases only from 0.69 to 1.07 pp as the contrast-to-noise ratio decreases from 5.2 to 1.2. For void estimation, the network does not significantly outperform a Gaussian-mixture histogram fit (p = 0.36) and tends to overestimate void content below 1%. A mean-grey-value estimator calibrated on validation data achieves comparable performance (1.09 vs 0.87 pp; p = 0.20). However, a 2% calibration error increases its estimation error to 8.4 pp, whereas the network, whose input is normalized independently for each crop, remains completely unaffected.",
+      "summary": "",
+      "journal": "Research Square",
+      "publication_date": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11690358/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11690358/v1",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Composite material",
+        "Void (composites)",
+        "Residual",
+        "Local Void"
+      ],
+      "citation_count": 0,
+      "work_type": "preprint",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 23.64,
+      "current_rank": 4,
+      "id": "P10"
+    },
+    {
+      "title": "Dual X-ray pulses enable pump-probe X-ray Thomson scattering measurements",
+      "authors": [
+        "Avery Thompson"
+      ],
+      "abstract": "Using X-rays for the pump and probe pulses enables more localized measurements with less material damage.",
+      "summary": "",
+      "journal": "Scilight",
+      "publication_date": "2026-11-13",
+      "doi": "10.1063/10.0047451",
+      "url": "https://doi.org/10.1063/10.0047451",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 0.0,
+      "current_rank": 35,
+      "id": "P11"
+    },
+    {
+      "title": "A unified modeling of X-ray and gamma-ray spectro-polarimetric data: The case of Cygnus X-1",
+      "authors": [
+        "T. Bouchet",
+        "T. Siegert",
+        "V. Grinberg",
+        "J. Rodriguez",
+        "F. Cangemi",
+        "P. Laurent",
+        "J. Wilms"
+      ],
+      "abstract": "With the advent of new instrumentation, the available spectro-polarimetric measurements in the X-ray and gamma-ray domains have increased significantly. For black-hole X-ray binaries such as Cygnus X-1, a clear discrepancy between the independent measurements of X-ray and soft-γ-ray polarization has emerged. This discrepancy challenges our understanding of the accretion process and emission mechanisms, including acceleration processes at play and the geometry of the system. We thus aim to develop a general-purpose method to model the broadband, high-energy spectro-polarimetric data. Our novel approach makes it possible to simultaneously fit the spectral and polarization data from independent instruments in different energy bands. Measurements with widely different energy bin sizes and statistical significances are combined in a robust and statistically sound way in a single fit, taking into account energy-dependent polarization mixing from different model components. We applied our method to the spectro-polarimetric data of the black-hole X-ray binary Cygnus X-1 in the 2,keV--2,MeV range and show that it enables us to describe the shape of the elusive soft γ-rays' hard tail with unprecedented quality and in exceptional detail. We constrained the photon cutoff energy from optically thin synchrotron emission at $( _ + - ) $. Using this value, we discuss the origin of the nonthermal electrons in the context of Bohm diffusion and synchrotron cooling. We further provide a new explanation for the misalignment of the polarization of the synchrotron hard tail compared to the jet axis based on magnetic-field helicity and Doppler boosting. Overall, our new approach offers a simple and straightforward way to apply models to diverse spectro-polarimetric data for the broader community. 10^ 2 keV",
+      "summary": "",
+      "journal": "Astronomy &amp; Astrophysics",
+      "publication_date": "2026-11-16",
+      "doi": "10.1051/0004-6361/202661794",
+      "url": "https://doi.org/10.1051/0004-6361/202661794",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 62.86,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 22.49,
+      "current_rank": 5,
+      "id": "P12"
+    },
+    {
+      "title": "Non-Destructive Evaluation for Engineered Surfaces: Methods, In-Process Sensing, and Data-Driven Inspection in the NDE 4.0 Era",
+      "authors": [
+        "Kuldeep Sharma",
+        "R. P. Sharma"
+      ],
+      "abstract": "Engineered surfaces such as coatings, diffusion layers, cold-sprayed deposits, laser-clad overlays, additively manufactured surface regions, peened layers, and anodised films increasingly determine the performance, inspect ability, and service life of high-value metallic and ceramic components. Wear, corrosion, fatigue, oxidation, debonding, and crack initiation are controlled in these shallow, graded, anisotropic, and interface- dominated regions. This review examines how non-destructive evaluation (NDE) methods can be selected and qualified for them. It links inspection physics to specific problems: coating thickness and adhesion, near- surface residual stress, porosity gradients, lack of fusion, thermal-barrier-coating debonding, weak cold-spray interfaces, and additive-manufacturing surface roughness. Magnetic Barkhausen noise, eddy-current testing, active infrared thermography, phased-array and laser ultrasonics, acoustic emission, optical metrology, digital image correlation, microwave and terahertz sensing, and X-ray computed tomography are assessed for both capability and limitation. The review argues for hierarchical, multi-modal strategies in which rapid screening is followed by calibrated confirmation where required. It also covers the shift toward NDE 4.0, including in- process sensing, data fusion, physics-informed machine learning, uncertainty-aware interpretation, and digital twins. Persistent barriers include limited probability-of-detection evidence, poor transferability of data-driven models, scarce reference specimens, and incomplete acceptance criteria",
+      "summary": "",
+      "journal": "South Mediterranean University Journal of Pure and Applied Sciences",
+      "publication_date": "2026-11-11",
+      "doi": "10.67525/mbavjw97",
+      "url": "https://doi.org/10.67525/mbavjw97",
+      "source": "openalex",
+      "topics": [
+        "Nondestructive testing",
+        "Materials science",
+        "Mechanical engineering",
+        "Forensic engineering",
+        "Coating"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 57.5
+      },
+      "final_score": 13.89,
+      "current_rank": 15,
+      "id": "P13"
+    },
+    {
+      "title": "Sharp but Wrong? Fidelity and Hallucination in Deep CT Super-Resolution with Analytic Phantoms",
+      "authors": [
+        "Tanvi Sharma",
+        "Mayank Goswami"
+      ],
+      "abstract": "Abstract Deep super-resolution (SR) techniques could potentially recover the resolution that X-ray computed tomography (CT) sacrifices to reduce radiation dose and scanning time. However, in CT imaging, generating details that appear plausible but are not physically present represents a critical failure that standard evaluation metrics cannot detect.In this study, we train two deep-learning models to upsample CT slices: a pixel-loss residual network (EDSR) and an adversarially trained network (ESRGAN). Both models are evaluated in terms of reconstruction fidelity and their tendency to hallucinate image details.To assess hallucinated details, we use analytical phantoms containing line-pair gratings and pores with precisely known frequencies and diameters. The evaluation includes held-out frequency bands, a documented blur–decimation–noise model, and a validated spectral measurement method that classifies each grating as resolved, washed out, aliased, or hallucinated.At ×4 upscaling, all neural networks improve PSNR by more than 6 dB compared with bicubic and Lanczos interpolation. ESRGAN achieves the best perceptual score (LPIPS = 0.015 compared with 0.046 for EDSR), at the cost of approximately 2 dB in reconstruction fidelity. However, ESRGAN hallucinates 61% of the gratings that cannot be represented in the input image, whereas interpolation methods produce no hallucinated gratings.An adversarial-weight sweep demonstrates that perceptual loss alone is responsible for these invented details. Pixel-loss networks also exhibit limitations, replacing held-out gratings just below the Nyquist limit with their aliased counterparts learned during training.At ×2 upscaling, hallucination rates decrease substantially but do not disappear entirely, with ESRGAN still hallucinating 27% of the gratings. Interestingly, pores and thin lines that were never encountered during training are successfully recovered by all networks.All experimental data are synthetic and reproducible using a specified random seed.",
+      "summary": "",
+      "journal": "Research Square",
+      "publication_date": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11685421/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11685421/v1",
+      "source": "openalex",
+      "topics": [
+        "Hallucinating",
+        "Computer science",
+        "Artificial intelligence",
+        "Fidelity",
+        "Lanczos resampling"
+      ],
+      "citation_count": 0,
+      "work_type": "preprint",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 21.87,
+      "current_rank": 6,
+      "id": "P14"
+    },
+    {
+      "title": "Assessment of fibre orientation and distribution in steel fibre reinforced concrete via piecewise density-based spatial clustering of applications with noise algorithm using CT imaging",
+      "authors": [
+        "Beng Wei Chong",
+        "Pratik Gujar",
+        "Xijun Shi"
+      ],
+      "abstract": "The distribution of fibres into the concrete matrix greatly influences the mechanical properties of fibre-reinforced concrete (FRC). Assessment of the distribution and orientation of fibres in FRC is essential for predicting its mechanical properties. To date, many robust techniques have successfully analysed straight fibre-reinforced concrete systems but most of them face challenges in analysing fibres that are tortuous or curved within the concrete matrix. To this end, a novel methodology based on the Density-Based Spatial Clustering of Applications with Noise (DBSCAN) algorithm was developed to quantify the distribution and orientation of fibre within the concrete matrix using a piecewise scanning approach. This study focused on two types of concrete: one with recycled steel fibres (RSF) obtained from scrap tyres and the other combining RSF with manufactured steel fibres (MSF). The images obtained from X-ray computed tomography (CT) were utilised for post-processing image analysis, generating coordinates that were then employed by a graph-based spatial method for the determination of fibre dispersion across all principal axes. The developed algorithm was then employed to determine the spatial distribution of individual fibres. The research introduced an intuitive algorithm that can accurately capture the complex tortuous geometry of fibre in concrete.",
+      "summary": "",
+      "journal": "International Journal of Pavement Engineering",
+      "publication_date": "2026-11-11",
+      "doi": "10.1080/10298436.2026.2759116",
+      "url": "https://doi.org/10.1080/10298436.2026.2759116",
+      "source": "openalex",
+      "topics": [
+        "Piecewise",
+        "Orientation (vector space)",
+        "Cluster analysis",
+        "Materials science",
+        "Noise (video)"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 47.14,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 20.68,
+      "current_rank": 9,
+      "id": "P15"
+    },
+    {
+      "title": "Dynamic chlorine vacancies enable X-ray-specific afterglow",
+      "authors": [
+        "Huilin Liu",
+        "Yunfei Shang",
+        "QianQian Zhao",
+        "Deyang Li",
+        "Peng Gao",
+        "Shuwei Hao",
+        "Jiajia Zhou",
+        "Chunhui Yang"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Nature Communications",
+      "publication_date": "2026-11-13",
+      "doi": "10.1038/s41467-026-79525-2",
+      "url": "https://doi.org/10.1038/s41467-026-79525-2",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 0.0,
+      "current_rank": 36,
+      "id": "P16"
+    },
+    {
+      "title": "Soil Liquefaction",
+      "authors": [
+        "Balaji Lakkimsetti",
+        "Gali Madhavi Latha"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Springer eBooks",
+      "publication_date": "2026-11-14",
+      "doi": "10.1007/978-981-96-2366-2_6-2",
+      "url": "https://doi.org/10.1007/978-981-96-2366-2_6-2",
+      "source": "openalex",
+      "topics": [
+        "Liquefaction",
+        "Geotechnical engineering",
+        "Soil liquefaction",
+        "Pore water pressure",
+        "Environmental science"
+      ],
+      "citation_count": 0,
+      "work_type": "book-chapter",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 0.0,
+      "current_rank": 34,
+      "id": "P17"
+    },
+    {
+      "title": "Cramér–Rao lower bound for spectral propagation-based x-ray phase-contrast imaging",
+      "authors": [
+        "Giavanna Jadick",
+        "Patrick La Rivière"
+      ],
+      "abstract": "Objective. Spectral x-ray phase-contrast imaging (XPCI) is a promising emerging method for quantitative phase retrieval. With an energy-discriminating detector, the independent measurements needed for quantitative phase retrieval or material decomposition can be acquired in a single shot. The existing Cramér–Rao lower bound (CRLB) model for attenuation-based spectral imaging, however, cannot capture the spatially distributed phase information associated with propagation-based (PB) XPCI. In this work, we develop a generalized CRLB framework for spectral PB-XPCI. Approach. The PB-XPCI forward model was formulated for nonideal, polychromatic photon-counting detector measurements. Two-material toy models were constructed with simple edge geometry to parallel the attenuation-based single-ray CRLB, with Poisson Fisher information computed over both energy-resolved and spatially distributed detector measurements. The conventional single-ray and proposed single-edge CRLBs were compared for ideal dual-monoenergy acquisitions. The single-edge model was then used to optimize detector energy thresholds for a nonideal 30 kVp polychromatic system, and CRLB predictions were validated against simulations. Main results. The single-edge model yielded substantially lower CRLBs relative to the fluence-matched single-ray model, while free-space propagation provided additional energy-dependent improvements. For the idealized monoenergetic single-edge model, the CRLB for each basis material was minimized when both measurements used the same energy, indicating that spatial measurements supplied sufficient independent information for material decomposition. For the polychromatic system, the CRLB exhibited material-dependent optimal energy thresholds, which shifted with the number of available energy bins. The single-edge and 2D-geometry CRLB models identified similar optimal energy thresholds within 0.1–1.9 keV, while simulated maximum-likelihood thickness estimates closely approached the CRLB with mean variance ratios of 1.006–1.020. Significance. The proposed CRLB model retains the interpretability of the familiar attenuation-based model while including PB phase information, providing a useful theoretical foundation for evaluation and optimization of emerging spectral PB-XPCI systems as well as proposed phase retrieval and material decomposition algorithms.",
+      "summary": "",
+      "journal": "Physics in Medicine &amp; Biology",
+      "publication_date": "2026-11-14",
+      "doi": "10.1088/1361-6560/aebd38",
+      "url": "https://doi.org/10.1088/1361-6560/aebd38",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 65.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 21.06,
+      "current_rank": 8,
+      "id": "P18"
+    },
+    {
+      "title": "Characterization of Cosmic Ray Background at the Physics Faculty Building Using a COSMIX Detector",
+      "authors": [
+        "Marwan Ajoor"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Proceedings of 29th European Cosmic Ray Symposium — PoS(ECRS2026)",
+      "publication_date": "2026-11-13",
+      "doi": "10.22323/1.528.0036",
+      "url": "https://doi.org/10.22323/1.528.0036",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 7.33,
+      "current_rank": 27,
+      "id": "P19"
+    },
+    {
+      "title": "Additively-manufactured, metal-loaded polylactic acid (PLA) parts for X-ray detector assemblies",
+      "authors": [
+        "James R. Distel",
+        "Daniel C. Poulson",
+        "Katherine E. Gattiker"
+      ],
+      "abstract": "This study demonstrates that metal-loaded polylactic acid (PLA) filaments (copper, brass, and stainless steel) can be 3D printed into effective x-ray filters and collimators using commercially available printers. The materials are vacuum compatible and withstand monochromatic x-rays up to 40 keV without degradation. Synchrotron radiation measurements confirmed transmission properties and identified expected x-ray absorption edges for constituent elements (Cr, Fe, Ni, Cu, Zn). These 3D printed components can be easily integrated into x-ray sensor assemblies, with sensor response tunable by adjusting material thickness and composition, demonstrating additive manufacturing's potential for rapid sensor prototyping.",
+      "summary": "",
+      "journal": "Sensors and Communication Technologies in the 1 GHz to 10 THz Band III",
+      "publication_date": "2026-11-13",
+      "doi": "10.1117/12.3119120",
+      "url": "https://doi.org/10.1117/12.3119120",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 17.25,
+      "current_rank": 12,
+      "id": "P20"
+    },
+    {
+      "title": "Wide SOBB Hierarchies for Ray Tracing of Dynamic Scenes",
+      "authors": [
+        "M. Káčerik",
+        "T. Hlavová",
+        "J. Bittner"
+      ],
+      "abstract": "Skewed oriented bounding boxes (SOBBs) have recently been proposed as an alternative to the axis‐aligned bounding boxes (AABBs) for the construction of bounding volume hierarchies (BVHs) for ray tracing. We expand this idea further and propose efficient algorithms for constructing compressed wide BVHs with SOBBs and updating these BVHs for dynamic scenes. The proposed approach typically yields between 1.07x and 1.6x faster traversal of secondary rays than the state‐of‐the‐art compressed wide AABB BVH with extreme cases approaching 10x speedup. This is achieved at the cost of 1.15x slower build times and 7‐15 bits of extra information per node. Our newly proposed refit algorithm for SOBB hierarchies is more than 3x faster than the original SOBB refit approach and requires roughly 4x less scratch memory. This makes it only about 1.45x slower compared to the refit of an equivalent wide AABB hierarchy while maintaining the faster performance profile of tighter bounding volumes. Together, these advances position SOBB hierarchies as a viable alternative for real‐time ray tracing.",
+      "summary": "",
+      "journal": "Computer Graphics Forum",
+      "publication_date": "2026-11-13",
+      "doi": "10.1111/cgf.70643",
+      "url": "https://doi.org/10.1111/cgf.70643",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 3.14,
+      "current_rank": 31,
+      "id": "P21"
+    },
+    {
+      "title": "Properties of foamed concrete and thermal conductivity simulation of ITS composite panels",
+      "authors": [
+        "B. Y. Liu",
+        "L. Li",
+        "J. H. Luo",
+        "Y. Wang",
+        "Y. T. Zhou",
+        "M. L. Zhuang"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Strength of Materials",
+      "publication_date": "2026-11-11",
+      "doi": "10.1007/s11223-026-00979-2",
+      "url": "https://doi.org/10.1007/s11223-026-00979-2",
+      "source": "openalex",
+      "topics": [
+        "Thermal conductivity",
+        "Materials science",
+        "Solid mechanics",
+        "Composite number",
+        "Composite material"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 1.92,
+      "current_rank": 32,
+      "id": "P22"
+    },
+    {
+      "title": "Reference Images and Reconstructed Volumes for 2D-to-3D Pore-Space Synthesis by Gravity Packing",
+      "authors": [
+        "Dmitry Kulygin",
+        "Andrey Ananev",
+        "Aleksey N. Khlyupin",
+        "Dmitry Korost",
+        "Vasily Belokhin"
+      ],
+      "abstract": "This dataset accompanies a study on reconstructing three-dimensional granular media from two-dimensional images. The reconstruction workflow combines stereological estimation of grain-size distributions with gravity-driven grain packing. A second packing stage uses temporary virtual spheres to control porosity and the pore-size distribution. The dataset contains 54 RAW files for four samples. Sample 0 includes ten reference volumes and eight reconstructed volumes. Samples 1 and 2 each include one reference volume and ten reconstructed volumes. Sample 3 includes grayscale and binarized X-ray computed tomography (XCT) volumes, grayscale and binarized scanning electron microscopy (SEM) images, and ten reconstructed volumes. The paired reference and reconstructed data support comparisons of pore morphology, connectivity, and absolute permeability. The files are distributed in five ZIP archives. Images and volumes are stored as headerless unsigned 8-bit RAW arrays. The README describes the archive contents and how to read the arrays. The manifest lists the dimensions and SHA-256 checksum of each RAW file, and SHA256SUMS provides checksums for the ZIP archives.",
+      "summary": "",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publication_date": "2026-11-13",
+      "doi": "10.5281/zenodo.24199531",
+      "url": "https://doi.org/10.5281/zenodo.24199531",
+      "source": "openalex",
+      "topics": [
+        "Grayscale",
+        "Sample (material)",
+        "Volume (thermodynamics)",
+        "Computer graphics (images)",
+        "Artificial intelligence"
+      ],
+      "citation_count": 0,
+      "work_type": "dataset",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 9.33,
+      "current_rank": 24,
+      "id": "P23"
+    },
+    {
+      "title": "Pore structure evolution of ultra-high performance concrete incorporating coal gangue ceramsite based on 1H NMR and X-CT imaging with sub-pixel edge detection",
+      "authors": [
+        "Yu Qin",
+        "Jianhui Liu",
+        "Banfu Yan",
+        "Zheng Chen"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Construction and Building Materials",
+      "publication_date": "2026-11-11",
+      "doi": "10.1016/j.conbuildmat.2026.148872",
+      "url": "https://doi.org/10.1016/j.conbuildmat.2026.148872",
+      "source": "openalex",
+      "topics": [
+        "Materials science",
+        "Composite material",
+        "Enhanced Data Rates for GSM Evolution",
+        "Coal",
+        "Gangue"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 6.25,
+      "current_rank": 29,
+      "id": "P24"
+    },
+    {
+      "title": "Synchrotron Cooling Times in Jet Knots: Which Electrons Survive the Trip Downstream",
+      "authors": [
+        "William Alexander Aldred"
+      ],
+      "abstract": "This paper addresses a single accounting question in the physics of relativistic jets: whether electrons energetic enough to emit optical and X-ray synchrotron radiation can survive transport over kiloparsec distances in a jet, or must be accelerated where they radiate. Using magnetic fields from ten to three hundred microgauss and electron Lorentz factors from one thousand to one hundred thousand, spanning values inferred for knots in nearby jets, the calculation derives new bounds and budgets from standard synchrotron and special-relativistic relations, with every number produced by the deposited compute script. The headline results are: cooling yr B100 g1e4 = 2.46e+05, cooling yr B10 g1e3 = 2.46e+08, travel 1kpc yr = 1.09e+04, surviving fraction cases = 11, total cases = 12. The grid divides sharply. The study is a computation from stated assumptions and published inputs; it is simulated, not measured, and its conclusions are stated at the precision those inputs support.",
+      "summary": "",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publication_date": "2026-11-13",
+      "doi": "10.5281/zenodo.24179954",
+      "url": "https://doi.org/10.5281/zenodo.24179954",
+      "source": "openalex",
+      "topics": [
+        "Synchrotron",
+        "Physics",
+        "Electron",
+        "Synchrotron radiation",
+        "Jet (fluid)"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 8.14,
+      "current_rank": 25,
+      "id": "P25"
+    },
+    {
+      "title": "Critical defect identification with feature-based defect ranking for laser powder bed fused Ti–6Al–4V",
+      "authors": [
+        "Amir Oladazimi",
+        "Jiafeng Ye",
+        "Muztahid Muhammad",
+        "Alexander Vinel",
+        "Daniel Silva",
+        "Shuai Shao",
+        "Nima Shamsaei",
+        "Jia Peter Liu"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Progress in Additive Manufacturing",
+      "publication_date": "2026-11-10",
+      "doi": "10.1007/s40964-026-02077-w",
+      "url": "https://doi.org/10.1007/s40964-026-02077-w",
+      "source": "openalex",
+      "topics": [
+        "Criticality",
+        "Materials science",
+        "Mahalanobis distance",
+        "Fracture (geology)",
+        "Critical area"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 3.83,
+      "current_rank": 30,
+      "id": "P26"
+    },
+    {
+      "title": "Fluorinated Copper(I) Iodine Cluster Scintillators\nEnable High-Temperature X-ray Imaging",
+      "authors": [
+        "Cao Fang",
+        "Dong Tan",
+        "Yujing Gao",
+        "Zhipeng Zhang",
+        "Xi Kang",
+        "Shuo Yu",
+        "Shoubo Wei",
+        "Zhijia Hu",
+        "Shan Jin",
+        "Chang Xu",
+        "Manzhou Zhu"
+      ],
+      "abstract": "The development of scintillators that maintain excellent performance under high temperatures is a critical challenge. Here, by simply replacing the triphenylphosphine ligand with its fluorinated analogue, we successfully switched the emission pathway of Cu2I2 clusters from pure phosphorescence to a hybrid phosphorescence/thermally activated delayed fluorescence (TADF) mechanism, enabling adaptive high-temperature X-ray imaging. Combined experimental and theoretical investigations reveal that the fluorination strategy reduces the singlet–triplet energy gap to an exceptionally small value of 35 meV, thereby promoting efficient reverse intersystem crossing. The TADF contribution reaches 95.7% at room temperature. This temperature-responsive characteristic endows the fluorinated cluster with adaptive X-ray imaging capability across a broad temperature window from 293 to 413 K, overcoming the thermal quenching phenomenon in traditional phosphorescence-only scintillators. This work establishes a molecular design approach for smart scintillators capable of reliable operation in demanding thermal environments.",
+      "summary": "",
+      "journal": "ACS Nano",
+      "publication_date": "2026-11-12",
+      "doi": "10.1021/acsnano.6c14275",
+      "url": "https://doi.org/10.1021/acsnano.6c14275",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 9.39,
+      "current_rank": 23,
+      "id": "P27"
+    },
+    {
+      "title": "Non-destructive quantification of magnesite in a serpentinite-hosted rock core using x-ray computed tomography and Gaussian mixture model",
+      "authors": [
+        "Panagiotis Koukakis",
+        "Nikolaos Avrantinis",
+        "Konstantinos G. Gatos",
+        "Epameinondas Ntzanis",
+        "Zafeiria Papathanasiou",
+        "Pavlos Avramidis"
+      ],
+      "abstract": "Accurate volumetric quantification of lithological phases in heterogeneous rocks is essential for resource evaluation and for understanding rock physical properties, yet conventional methods commonly rely on destructive sampling and subjective visual logging. X-ray computed tomography (CT) provides a non-destructive alternative. However, segmentation of magnesite-bearing cores is difficult because magnesite and serpentinite exhibit partially overlapping CT attenuation distributions. Here we present a reproducible workflow, combining whole-core clinical CT imaging with anisotropic diffusion denoising and Gaussian Mixture Model (GMM) probabilistic segmentation, demonstrated on a magnesite-bearing rock core (G-4, Gerorema mine, Northern Evia, Greece). In the studied system CT contrast is chemistry-driven rather than density-driven: iron-bearing serpentinite attenuates the X-ray beam more strongly than iron-free magnesite at 120 kVp, so magnesite forms the low-attenuation (dark) class and serpentinite the high-attenuation (bright) class, an assignment corroborated by core photographs and by independent magnetic susceptibility scanning. A two-component model (magnesite μ = 1504 HU, serpentinite μ = 1991 HU; decision boundary 1654 HU) yields 1098 cm³ of magnesite (27.5% of the solid core volume) and 2896 cm³ of serpentinite (72.5%). This accessible CT–GMM pipeline provides objective, non-destructive and quantitative characterization of magnesite-bearing core material, supporting reproducible resource assessment while preserving the core for subsequent petrographic, geochemical and physical property analyses.",
+      "summary": "",
+      "journal": "Earth Resources and Environmental Remote Sensing/GIS Applications XVII",
+      "publication_date": "2026-11-12",
+      "doi": "10.1117/12.3116866",
+      "url": "https://doi.org/10.1117/12.3116866",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 21.73,
+      "current_rank": 7,
+      "id": "P28"
+    },
+    {
+      "title": "Analysis of breast X-ray radiation source calibration methods for smart healthcare",
+      "authors": [
+        "Zengyun Liu",
+        "Tiedong Hou",
+        "Zaitao Liu",
+        "Fei Song"
+      ],
+      "abstract": "In order to meet the development needs of smart healthcare and digital health, and improve the accuracy of breast X-ray radiation source measurement, this article systematically analyzes the calibration methods of medical breast X-ray radiation sources, focusing on the calibration methods of key parameters such as average dose of breast glands and image resolution. The GUM method was used to evaluate the uncertainty of the measurement results of tube voltage and average dose of breast gland. The research results have improved the traceability system of medical breast X-ray radiation source values, providing technical support for intelligent quality control of medical imaging equipment in smart healthcare scenarios.",
+      "summary": "",
+      "journal": "International Conference on Smart Healthcare and Digital Health (SHDH 2026)",
+      "publication_date": "2026-11-11",
+      "doi": "10.1117/12.3134821",
+      "url": "https://doi.org/10.1117/12.3134821",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 13.62,
+      "current_rank": 17,
+      "id": "P29"
+    },
+    {
+      "title": "High-background X-ray single particle imaging with 2D crystal holographic enhancement",
+      "authors": [
+        "Abhishek Mall",
+        "Zhou Shen",
+        "Kartik Ayyer"
+      ],
+      "abstract": "X-ray single particle imaging (SPI) offers the potential to visualize the structures of biomolecules at near-atomic resolution. However, current structural determination at X-ray free-electron lasers (XFELs) is limited to moderate resolution, primarily due to background scattering. Here, we propose a modified SPI technique based on holographic enhancement from a strongly scattering 2D crystal lattice placed near the object. The lattice Bragg peaks act as a structured reference, converting the weak object signal into measurable intensity modulations above the noise in the background and enabling structure retrieval. Numerical simulations, with a custom reconstruction algorithm, show high-fidelity reconstructions even when the background is up to 10 5 times stronger than the signal. These simulations establish periodic crystalline references as a route toward background-tolerant fixed-target SPI and motivate their development for synchrotron sources.",
+      "summary": "",
+      "journal": "Optics Express",
+      "publication_date": "2026-11-16",
+      "doi": "10.1364/oe.615265",
+      "url": "https://doi.org/10.1364/oe.615265",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 40.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 65.0,
+        "instrumentation_relevance": 40.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 35.29,
+      "current_rank": 1,
+      "id": "P30"
+    },
+    {
+      "title": "Corrosion Morphology and Penetration in High-Strength Structural Steels Characterized by X-Ray Tomography and Mass-Loss Measurements",
+      "authors": [
+        "Stanislav Seitl",
+        "Mohammad Sami Al Khazali",
+        "Ivana Kumpová",
+        "Pavel Doubek",
+        "Lucie Malíková",
+        "Jan Klusák"
+      ],
+      "abstract": "Mass-loss measurements provide a global measure of corrosion damage but do not capture extreme localized penetration. This study compares CT-derived maximum localized penetration with mass-loss-derived equivalent average penetration for S460, S690, and S960 structural steels subjected to three controlled 5% NaCl exposure regimes. X-ray computed tomography was performed on one specimen per steel-grade–exposure combination, while gravimetric measurements were obtained from four comparable specimens per condition. The novelty lies in directly comparing localized CT descriptors with replicated global mass-loss data under common exposure conditions. Maximum localized penetration ranged from 97.5 to 724.2 µm, whereas equivalent average penetration ranged from 12.9 to 46.1 µm. The results show that CT and gravimetric measurements describe different aspects of corrosion damage and should not be used interchangeably. A corrosion localization index was used only as a supplementary maximum-to-average penetration ratio. Combining both descriptors may improve durability assessment where average mass loss underrepresents severe localized penetration.",
+      "summary": "",
+      "journal": "Frattura ed Integrità Strutturale",
+      "publication_date": "2026-11-10",
+      "doi": "10.3221/igf-esis.79.12",
+      "url": "https://doi.org/10.3221/igf-esis.79.12",
+      "source": "openalex",
+      "topics": [
+        "Penetration (warfare)",
+        "Gravimetric analysis",
+        "Corrosion",
+        "Materials science",
+        "Penetration depth"
+      ],
+      "citation_count": 0,
+      "work_type": "article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 20.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 38.33
+      },
+      "final_score": 11.98,
+      "current_rank": 19,
+      "id": "P31"
+    },
+    {
+      "title": "Correction: Simulation and experimental validation of a meter-scale liquid scintillator detector prototype for cosmic-ray imaging",
+      "authors": [
+        "Meihang Xu",
+        "Ying Fu",
+        "Xiaoyu Yang",
+        "Yi Li",
+        "Fengjiao Luo",
+        "Xingming Fan",
+        "Yuekun Heng"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "The European Physical Journal Plus",
+      "publication_date": "2026-11-11",
+      "doi": "10.1140/epjp/s13360-026-08517-4",
+      "url": "https://doi.org/10.1140/epjp/s13360-026-08517-4",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 43.33,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 11.67,
+      "current_rank": 21,
+      "id": "P32"
+    },
+    {
+      "title": "Toporadnet: A topological deep radiation pattern analysis framework for robust X-ray defect characterisation",
+      "authors": [
+        "R. Sudha",
+        "L. Mubaraali",
+        "Edemialem Gedefaye Mehretie",
+        "Balaji Baskaran"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Radiation Effects and Defects in Solids",
+      "publication_date": "2026-11-12",
+      "doi": "10.1080/10420150.2026.2761448",
+      "url": "https://doi.org/10.1080/10420150.2026.2761448",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 1.92,
+      "current_rank": 33,
+      "id": "P33"
+    },
+    {
+      "title": "Multi-scale Characterization of End-Point Shrinkage State of Compacted Clay Soils Using Mercury Intrusion Porosimetry and Imaging Techniques",
+      "authors": [
+        "M. Julina",
+        "T. Thyagaraj"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Lecture notes in civil engineering",
+      "publication_date": "2026-11-11",
+      "doi": "10.1007/978-981-92-7598-4_10",
+      "url": "https://doi.org/10.1007/978-981-92-7598-4_10",
+      "source": "openalex",
+      "topics": [
+        "Shrinkage",
+        "Porosimetry",
+        "Materials science",
+        "Mercury intrusion porosimetry",
+        "Microstructure"
+      ],
+      "citation_count": 0,
+      "work_type": "conference-paper",
+      "is_peer_reviewed": false,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 9.39,
+      "current_rank": 22,
+      "id": "P34"
+    },
+    {
+      "title": "The X-ray Variability of the Ultraluminous X-ray Sources in the NGC 4631 Galaxy",
+      "authors": [
+        "Jiashun Chen",
+        "Jianfeng Wu",
+        "Zikun Lin"
+      ],
+      "abstract": "We perform a systematic study on the long-term X-ray variability for the five ultraluminous X-ray sources (ULXs) in the NGC 4631 galaxy (X1–X5), using Chandra, XMM-Newton, and Swift observations covering a 24 yr span. Light curves for the five ULXs are presented, while X-ray spectra were modeled for observations with sufficient counts. The normalized excess variance and structure function are utilized to study the X-ray variability behavior of the ULXs. The normalized excess variance is anti-correlated with average X-ray luminosity for three ULXs, indicating that objects with higher average luminosity tend to exhibit relatively lower amplitude of variability. The structure function values increase with time interval in two sources, showing that flux variations become more significant for longer timescales. These trends are also found in the X-ray variability of active galactic nuclei (AGNs). The similarity between ULXs and AGNs, if confirmed for a larger sample of sources, possibly indicates similar underlying physical mechanisms for their X-ray variability.",
+      "summary": "",
+      "journal": "Research in Astronomy and Astrophysics",
+      "publication_date": "2027-01-01",
+      "doi": "10.1088/1674-4527/ae8b26",
+      "url": "https://doi.org/10.1088/1674-4527/ae8b26",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "journal-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 15.71,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 8.06,
+      "current_rank": 26,
+      "id": "P35"
+    },
+    {
+      "title": "ELFO: A Compact and Affordable Directional Cosmic Ray Telescope",
+      "authors": [
+        "Juan A. Garzon",
+        "Manue Valladares",
+        "Alvaro Vázquez"
+      ],
+      "abstract": "",
+      "summary": "",
+      "journal": "Proceedings of 29th European Cosmic Ray Symposium — PoS(ECRS2026)",
+      "publication_date": "2026-11-14",
+      "doi": "10.22323/1.528.0038",
+      "url": "https://doi.org/10.22323/1.528.0038",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 0.0,
+        "technical_impact": 0.0,
+        "instrumentation_relevance": 0.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 0.0
+      },
+      "final_score": 0.0,
+      "current_rank": 37,
+      "id": "P36"
+    },
+    {
+      "title": "Machine learning techniques for ray tracing algorithm",
+      "authors": [
+        "Luca Sgheri",
+        "Francesco Pio De Cosmo"
+      ],
+      "abstract": "Infrared limb sounders provide atmospheric profiles with high vertical resolution in the middle and upper atmosphere. Their forward models require accurate ray tracing to account for refractive path bending and correctly determine the lines of sight. Standard pointing strategies typically calculate detector pointing angles by assuming purely geometric straight paths or static reference atmospheres, such as US76. In either case, significant tangent-point discrepancies arise from seasonal and latitudinal variations in atmospheric conditions. In this work, we present a machine-learning approach to predict corrections to the pointing angles based on the US76 atmosphere. Using a LightGBM regressor trained on ERA5 reanalysis profiles, our model estimates the required pointing corrections from engineering tangent altitudes, orbital position, and time of observation. The predicted angles substantially reduce pointing errors compared with standard reference-atmosphere approaches across all target altitudes, with the largest improvements observed above 12 km, where atmospheric variability is lower. Above approximately 20–30 km, our results indicate that the effects of atmospheric refraction become negligible. Overall, the proposed method significantly improves pointing accuracy and can be exploited for future limb-sounding missions.",
+      "summary": "",
+      "journal": "Artificial Intelligence and Image and Signal Processing for Remote Sensing XXXII",
+      "publication_date": "2026-11-12",
+      "doi": "10.1117/12.3120063",
+      "url": "https://doi.org/10.1117/12.3120063",
+      "source": "crossref",
+      "topics": [],
+      "citation_count": 0,
+      "work_type": "proceedings-article",
+      "is_peer_reviewed": true,
+      "category": "Uncategorized",
+      "relevance": {},
+      "score_components": {
+        "scientific_significance": 0.0,
+        "experimental_novelty": 31.43,
+        "technical_impact": 21.67,
+        "instrumentation_relevance": 20.0,
+        "citation_influence": 0.0,
+        "cnde_relevance": 19.17
+      },
+      "final_score": 15.54,
+      "current_rank": 14,
+      "id": "P37"
+    }
+  ]
+}

@@ -132,3 +132,32 @@ and M5 over M1 (titles are always present). If no method passes, keep M0 and rev
 0.935 and neutral gap 0.191, against M0 0.932 / 0.468 and M1 0.965 / 0.154 (n = 3). Ranking on
 titles alone did not remove the gap there, which hints that papers without abstracts may also
 have less descriptive titles (for example, conference records). Week 3 tests this properly.
+
+## Week 3 (2026-11-16): hold-out result
+
+37 candidates, window 2026-11-10 to 2026-11-16 (built 2026-11-16, as pre-registered); must 4,
+maybe 20, skip 13; 12 without abstract, of which 4 are must-read or maybe (all maybe). Labelled
+blind; scored 2026-11-17. M1, M4 and M5 trained on week-1 and week-2 labels.
+`python -m eval.evaluate --train 2026-11-03 2026-11-09 --test 2026-11-16`
+
+| Method | P@4 | P@10 | skip@10 | NDCG | must pct (abstract) | neutral gap |
+|---|---|---|---|---|---|---|
+| M0 current keyword scorer | 0.00 | 0.10 | 1 | 0.749 | 0.340 | 0.422 |
+| M1 MiniLM centroid | 0.25 | 0.30 | 0 | 0.833 | 0.264 | 0.090 |
+| M2 MiniLM scope text | 0.00 | 0.10 | 2 | 0.716 | 0.493 | 0.068 |
+| M3 SPECTER scope text | 0.25 | 0.20 | 1 | 0.794 | 0.444 | 0.113 |
+| M4 MiniLM centroid + scope | 0.00 | 0.20 | 0 | 0.771 | 0.389 | 0.092 |
+| M5 MiniLM title-only centroid | 0.00 | 0.20 | 0 | 0.759 | 0.389 | -0.040 |
+| random order (mean) | 0.11 | 0.11 | 3.5 | 0.699 | 0.502 | -0.003 |
+
+(No must-read lacked an abstract, so "must pct (no abstract)" is empty this week.)
+
+**Decision, by the rule as written.** Candidate: M1 (highest NDCG among M1 to M5; next is M3 at
+0.794, outside the 0.01 tie margin). Condition 1 passes (NDCG 0.833 > 0.749; skip@10 0 <= 1).
+Condition 2 passes on week 3 alone, n = 4 >= 3 (neutral gap 0.090 <= 0.422), so no week 4 is
+needed. **M1 is adopted** (switch to be planned; until then the digest still runs M0).
+
+**Limits.** One hold-out week of 37 papers with 4 must-reads; no significance test. M1 also led
+week 2, which supports the choice but was not part of this test. P@4 of 0.25 means the top of the
+list is still not sharp. Not evidence for any decision: M5 (titles only) removed the abstract
+bias (gap -0.04) but ranked worse overall than M1.
