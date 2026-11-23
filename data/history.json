@@ -63,6 +63,38 @@
       "category": "Uncategorized",
       "source": "openalex",
       "final_score": 21.06
+    },
+    {
+      "title": "Defect-assisted space-charge accumulation drives electric-field reconstruction in cadmium zinc telluride x-ray detectors",
+      "doi": "10.1063/5.0355525",
+      "publication_date": "2026-11-16",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 29.89
+    },
+    {
+      "title": "Defects Assisted Space Charge Accumulation Drives Electric Field Reconstruction in Cadmium Zinc Telluride X-ray Detectors",
+      "doi": "10.60893/figshare.apl.c.8811807",
+      "publication_date": "2026-11-17",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 29.89
+    },
+    {
+      "title": "XPCIpy",
+      "doi": "10.5281/zenodo.24189126",
+      "publication_date": "2026-11-13",
+      "category": "Uncategorized",
+      "source": "openalex",
+      "final_score": 24.14
+    },
+    {
+      "title": "Synchrotron X-ray tomography and functional evaluations of lead-free piezoceramic-filled natural rubber composites",
+      "doi": "10.55713/jmmm.v37i1.2650",
+      "publication_date": "2026-11-18",
+      "category": "Uncategorized",
+      "source": "crossref",
+      "final_score": 23.12
     }
   ]
 }
